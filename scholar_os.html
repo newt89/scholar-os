@@ -774,10 +774,11 @@ window.onload = function() {
   var pEl  = document.getElementById('lp');
   var err  = document.getElementById('lerr');
 
-  function login() {
+  function simpleHash(s){var h=0;for(var i=0;i<s.length;i++){h=((h<<5)-h)+s.charCodeAt(i);h=h&0xFFFFFFFF;}return (h>>>0).toString(16);}
+function login() {
     var u = uEl.value.trim().toLowerCase();
     var p = pEl.value.trim();
-    if (u === 'andre' && p === 'ScholarOS2026!') {
+    if (u === 'andre' && simpleHash(p) === 'b0c0b239') {
       sessionStorage.setItem('auth', '1');
       wrap.style.display = 'none';
       app.style.display = 'block';
