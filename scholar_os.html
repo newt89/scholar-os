@@ -264,7 +264,7 @@ nav{flex:1;padding:10px 0;overflow-y:auto}
         <div class="card cgr"><div class="clabel">Weekly Miles — Last 4 Weeks</div><div class="chart-wrap"><canvas id="milesChart"></canvas></div></div>
       </div>
       <div class="g3">
-        <div class="card cg"><div class="clabel">Prayer Times</div><div style="font-family:var(--mono);font-size:10px;line-height:2.3;color:var(--tx)"><div>Fajr <span style="color:var(--gold);float:right">5:46 AM</span></div><div>Dhuhr <span style="color:var(--gold);float:right">1:02 PM</span></div><div>Asr <span style="color:var(--gold);float:right">5:14 PM</span></div><div>Maghrib <span style="color:var(--gold);float:right">7:02 PM</span></div><div>Isha <span style="color:var(--gold);float:right">8:17 PM</span></div></div></div>
+        <div class="card cg"><div class="clabel">Prayer Times</div><div style="font-family:var(--mono);font-size:10px;line-height:2.3;color:var(--tx)"><div>Fajr <span style="color:var(--gold);float:right">4:52 AM</span></div><div>Dhuhr <span style="color:var(--gold);float:right">12:53 PM</span></div><div>Asr <span style="color:var(--gold);float:right">5:37 PM</span></div><div>Maghrib <span style="color:var(--gold);float:right">7:35 PM</span></div><div>Isha <span style="color:var(--gold);float:right">8:56 PM</span></div></div></div>
         <div class="card ca"><div class="clabel">Current Focus</div><div style="font-family:var(--mono);font-size:10px;line-height:2.3;color:var(--tx)"><div>Arabic <span style="color:var(--gold);float:right">Phase 1.5</span></div><div>Quran <span style="color:var(--gold);float:right">Arabic study</span></div><div>GED Math <span style="color:var(--ac);float:right">Mon Tutor</span></div><div>Arabic Tutor <span style="color:var(--gold);float:right">Wed 9-10 AM</span></div><div>Org Chem <span style="color:var(--ac);float:right">Apr 2026</span></div><div>Running <span style="color:var(--gr);float:right">9 mi/day</span></div></div></div>
         <div class="card cp"><div class="clabel">Next Milestones</div><div style="font-family:var(--mono);font-size:9px;line-height:2.3;color:var(--tx)"><div><span style="color:var(--gold)">Mar 23</span> · Rep 28 Arabic study</div><div><span style="color:var(--gold)">Apr 2026</span> · Mosque routine</div><div><span style="color:var(--gold)">Dec 2026</span> · Arabic B2 + Russian</div><div><span style="color:var(--gold)">Oct 2027</span> · Russian B1/B2</div><div><span style="color:var(--gold)">Dec 2028</span> · German B1/B2</div></div></div>
       </div>
@@ -551,7 +551,7 @@ nav{flex:1;padding:10px 0;overflow-y:auto}
 
     </div>
     <!-- COURSES -->
-    <div class="panel" id="panel-courses">
+    <div class="panel" id="panel-courses" data-rebuilt="1">
       <div class="ph">FREE COURSES</div>
       <div class="ps">ARABIC · ORG CHEM · PHYSICS · MATH · NEUROSCIENCE · SURGERY · ALL FREE</div>
 
@@ -856,32 +856,33 @@ function toast(msg,type,title){
 // ══════════════════════════════════════════════
 var SCHED=[
   {t:'10:30 PM',b:[{c:'sl',x:'Sleep'},{c:'sl',x:'Sleep'},{c:'sl',x:'Sleep'},{c:'sl',x:'Sleep'},{c:'sl',x:'Sleep'},{c:'sl',x:'Sleep'},{c:'sl',x:'Sleep'}]},
-  {t:'3:00 AM',b:[{c:'sl',x:'Wake shower'},{c:'sl',x:'Wake shower'},{c:'sl',x:'Wake shower'},{c:'sl',x:'Wake shower'},{c:'sl',x:'Wake shower'},{c:'sl',x:'Wake shower'},{c:'sl',x:'Wake shower'}]},
-  {t:'3:15 AM',b:[{c:'ar',x:'Arabic reading'},{c:'ar',x:'Arabic reading'},{c:'ar',x:'Arabic reading'},{c:'ar',x:'Arabic reading'},{c:'ar',x:'Arabic reading'},{c:'ar',x:'Arabic reading'},{c:'ar',x:'Arabic reading'}]},
-  {t:'5:46 AM',b:[{c:'pr',x:'Fajr home'},{c:'pr',x:'Fajr home'},{c:'pr',x:'Fajr home'},{c:'pr',x:'Fajr home'},{c:'pr',x:'Fajr home'},{c:'pr',x:'Fajr home'},{c:'pr',x:'Fajr home'}]},
-  {t:'6:00 AM',b:[{c:'ar',x:'Arabic vocab cards'},{c:'ar',x:'Mandarin vocab'},{c:'ar',x:'Arabic vocab cards'},{c:'ar',x:'Mandarin vocab'},{c:'ar',x:'Arabic vocab'},{c:'ar',x:'Arabic vocab'},{c:'ar',x:'Mandarin vocab'}]},
-  {t:'8:00 AM',b:[{c:'da',x:'Daisy 3mi'},{c:'da',x:'Daisy 3mi'},{c:'da',x:'Daisy 3mi'},{c:'da',x:'Daisy 3mi'},{c:'da',x:'Daisy 3mi'},{c:'da',x:'Daisy 3mi'},{c:'da',x:'Daisy 3mi'}]},
-  {t:'9:00 AM',b:[{c:'st',x:'GED Math study'},{c:'st',x:'Mandarin study'},{c:'st',x:'Arabic study'},{c:'st',x:'GED Math study'},{c:'st',x:'Org Chem'},{c:'st',x:'GED review'},{c:'ar',x:'Arabic reading'}]},
-  {t:'10:00 AM',b:[{c:'tu',x:'Arabic Tutor'},{c:'tu',x:'Mandarin Tutor'},{c:'tu',x:'GED Math Tutor'},{c:'st',x:'GED Math study'},{c:'st',x:'Physics'},{c:'st',x:'Free study'},{c:'st',x:'Neuroscience'}]},
-  {t:'11:00 AM',b:[{c:'wk',x:'Walk library'},{c:'wk',x:'Walk library'},{c:'wk',x:'Walk library'},{c:'wk',x:'Walk library'},{c:'wk',x:'Walk library'},{c:'wk',x:'Walk library'},{c:'wk',x:'Walk library'}]},
-  {t:'11:30 AM',b:[{c:'st',x:'Library study'},{c:'st',x:'Library study'},{c:'st',x:'Library study'},{c:'st',x:'Library study'},{c:'st',x:'Library study'},{c:'st',x:'Library study'},{c:'st',x:'Library study'}]},
-  {t:'1:02 PM',b:[{c:'pr',x:'Dhuhr'},{c:'pr',x:'Dhuhr'},{c:'pr',x:'Dhuhr'},{c:'pr',x:'Dhuhr'},{c:'pr',x:'Dhuhr'},{c:'pr',x:'Dhuhr'},{c:'pr',x:'Dhuhr'}]},
-  {t:'1:20 PM',b:[{c:'st',x:'GED Math'},{c:'st',x:'Mandarin chars'},{c:'st',x:'Arabic deep'},{c:'st',x:'Math deep'},{c:'st',x:'Org Chem'},{c:'st',x:'Physics'},{c:'st',x:'Deep study'}]},
-  {t:'2:30 PM',b:[{c:'st',x:'Neuroscience'},{c:'st',x:'Neuroscience'},{c:'st',x:'Neuroscience'},{c:'st',x:'Neuroscience'},{c:'st',x:'Neuroscience'},{c:'st',x:'Neuroscience'},{c:'st',x:'Neuroscience'}]},
-  {t:'3:30 PM',b:[{c:'st',x:'Surgery videos'},{c:'st',x:'Surgery videos'},{c:'st',x:'Surgery videos'},{c:'st',x:'Surgery videos'},{c:'st',x:'Surgery videos'},{c:'st',x:'Surgery videos'},{c:'st',x:'Surgery videos'}]},
-  {t:'4:00 PM',b:[{c:'st',x:'English 50 pages'},{c:'st',x:'English 50 pages'},{c:'st',x:'English 50 pages'},{c:'st',x:'English 50 pages'},{c:'st',x:'English 50 pages'},{c:'st',x:'English 50 pages'},{c:'st',x:'English 50 pages'}]},
-  {t:'4:45 PM',b:[{c:'st',x:'Arabic reading'},{c:'st',x:'Mandarin reading'},{c:'st',x:'Arabic reading'},{c:'st',x:'Arabic reading'},{c:'st',x:'Arabic reading'},{c:'st',x:'Arabic reading'},{c:'st',x:'Mandarin reading'}]},
-  {t:'5:00 PM',b:[{c:'wk',x:'Walk home 1hr'},{c:'wk',x:'Walk home 1hr'},{c:'wk',x:'Walk home 1hr'},{c:'wk',x:'Walk home 1hr'},{c:'wk',x:'Walk home 1hr'},{c:'wk',x:'Walk home 1hr'},{c:'wk',x:'Walk home 1hr'}]},
-  {t:'5:14 PM',b:[{c:'pr',x:'Asr'},{c:'pr',x:'Asr'},{c:'pr',x:'Asr'},{c:'pr',x:'Asr'},{c:'pr',x:'Asr'},{c:'pr',x:'Asr'},{c:'pr',x:'Asr'}]},
-  {t:'6:00 PM',b:[{c:'st',x:'Quiz grind'},{c:'st',x:'Quiz grind'},{c:'st',x:'Quiz grind'},{c:'st',x:'Quiz grind'},{c:'st',x:'Quiz grind'},{c:'st',x:'Quiz grind'},{c:'st',x:'Quiz grind'}]},
-  {t:'7:02 PM',b:[{c:'pr',x:'Maghrib'},{c:'pr',x:'Maghrib'},{c:'pr',x:'Maghrib'},{c:'pr',x:'Maghrib'},{c:'pr',x:'Maghrib'},{c:'pr',x:'Maghrib'},{c:'pr',x:'Maghrib'}]},
-  {t:'7:15 PM',b:[{c:'st',x:'Whiteboard recall'},{c:'st',x:'Whiteboard recall'},{c:'st',x:'Whiteboard recall'},{c:'st',x:'Whiteboard recall'},{c:'st',x:'Whiteboard recall'},{c:'st',x:'Whiteboard recall'},{c:'st',x:'Whiteboard recall'}]},
-  {t:'8:17 PM',b:[{c:'pr',x:'Isha'},{c:'pr',x:'Isha'},{c:'pr',x:'Isha'},{c:'pr',x:'Isha'},{c:'pr',x:'Isha'},{c:'pr',x:'Isha'},{c:'pr',x:'Isha'}]},
-  {t:'8:30 PM',b:[{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'}]},
-  {t:'9:30 PM',b:[{c:'sl',x:'Journal + shower'},{c:'sl',x:'Journal + shower'},{c:'sl',x:'Journal + shower'},{c:'sl',x:'Journal + shower'},{c:'sl',x:'Journal + shower'},{c:'sl',x:'Journal + shower'},{c:'sl',x:'Journal + shower'}]},
+  {t:'3:00 AM',b:[{c:'sl',x:'Wake + shower'},{c:'sl',x:'Wake + shower'},{c:'sl',x:'Wake + shower'},{c:'sl',x:'Wake + shower'},{c:'sl',x:'Wake + shower'},{c:'sl',x:'Wake + shower'},{c:'sl',x:'Wake + shower'}]},
+  {t:'3:20 AM',b:[{c:'ar',x:'Arabic deep read'},{c:'ar',x:'Arabic deep read'},{c:'ar',x:'Arabic deep read'},{c:'ar',x:'Arabic deep read'},{c:'ar',x:'Arabic deep read'},{c:'ar',x:'Arabic deep read'},{c:'ar',x:'Arabic deep read'}]},
+  {t:'4:52 AM',b:[{c:'pr',x:'Fajr home'},{c:'pr',x:'Fajr home'},{c:'pr',x:'Fajr home'},{c:'pr',x:'Fajr home'},{c:'pr',x:'Fajr home'},{c:'pr',x:'Fajr home'},{c:'pr',x:'Fajr home'}]},
+  {t:'5:30 AM',b:[{c:'ar',x:'Arabic vocab+recall'},{c:'ar',x:'Mandarin HSK chars'},{c:'ar',x:'Arabic grammar'},{c:'st',x:'GED Math drills'},{c:'ar',x:'Arabic reading'},{c:'ar',x:'Arabic+Spanish read'},{c:'ar',x:'All lang vocab review'}]},
+  {t:'6:30 AM',b:[{c:'st',x:'English tech read'},{c:'st',x:'Russian flash read'},{c:'st',x:'English tech read'},{c:'st',x:'Physics concepts'},{c:'st',x:'Org Chem review'},{c:'st',x:'Neuroscience read'},{c:'st',x:'Weak topic review'}]},
+  {t:'7:30 AM',b:[{c:'st',x:'GED Math problems'},{c:'st',x:'Mandarin tones+pinyin'},{c:'st',x:'Arabic writing'},{c:'st',x:'GED Math problems'},{c:'st',x:'Physics problems'},{c:'st',x:'Org Chem mechanisms'},{c:'st',x:'Error correction'}]},
+  {t:'9:00 AM',b:[{c:'da',x:'Daisy walk 3mi'},{c:'da',x:'Daisy walk 3mi'},{c:'da',x:'Daisy walk 3mi'},{c:'da',x:'Daisy walk 3mi'},{c:'da',x:'Daisy walk 3mi'},{c:'da',x:'Daisy walk 3mi'},{c:'da',x:'Daisy walk 3mi'}]},
+  {t:'10:00 AM',b:[{c:'tu',x:'Arabic Tutor'},{c:'tu',x:'Mandarin Tutor'},{c:'tu',x:'GED Math Tutor'},{c:'st',x:'Physics self-study'},{c:'st',x:'Org Chem self'},{c:'st',x:'Free study'},{c:'st',x:'Review session'}]},
+  {t:'11:00 AM',b:[{c:'wk',x:'Walk to library 1.5hr'},{c:'wk',x:'Walk to library 1.5hr'},{c:'wk',x:'Walk to library 1.5hr'},{c:'wk',x:'Walk to library 1.5hr'},{c:'wk',x:'Walk to library 1.5hr'},{c:'wk',x:'Walk to library 1.5hr'},{c:'wk',x:'Walk to library 1.5hr'}]},
+  {t:'12:30 PM',b:[{c:'st',x:'Library opens - setup'},{c:'st',x:'Library opens - setup'},{c:'st',x:'Library opens - setup'},{c:'st',x:'Library opens - setup'},{c:'st',x:'Library opens - setup'},{c:'st',x:'Library opens - setup'},{c:'st',x:'Library opens - setup'}]},
+  {t:'12:53 PM',b:[{c:'pr',x:'Walk mosque Dhuhr'},{c:'pr',x:'Walk mosque Dhuhr'},{c:'pr',x:'Walk mosque Dhuhr'},{c:'pr',x:'Walk mosque Dhuhr'},{c:'pr',x:'Walk mosque Dhuhr'},{c:'pr',x:'Walk mosque Dhuhr'},{c:'pr',x:'Walk mosque Dhuhr'}]},
+  {t:'1:15 PM',b:[{c:'st',x:'Arabic grammar+write'},{c:'st',x:'Mandarin chars+write'},{c:'st',x:'GED Math hard probs'},{c:'st',x:'Physics deep study'},{c:'st',x:'Org Chem mechanisms'},{c:'st',x:'Org Chem deep'},{c:'st',x:'Math review'}]},
+  {t:'2:30 PM',b:[{c:'st',x:'Neuroscience read'},{c:'st',x:'Math light problems'},{c:'st',x:'Physics concepts'},{c:'st',x:'Org Chem problems'},{c:'st',x:'Neuroscience'},{c:'st',x:'Neuroscience deep'},{c:'st',x:'Physics review'}]},
+  {t:'3:30 PM',b:[{c:'st',x:'Surgery videos'},{c:'st',x:'Mandarin reading'},{c:'st',x:'Surgery videos'},{c:'st',x:'Surgery videos'},{c:'st',x:'Surgery videos'},{c:'st',x:'Surgery videos heavy'},{c:'st',x:'Lang recall all 5'}]},
+  {t:'4:30 PM',b:[{c:'st',x:'Spanish reading'},{c:'st',x:'Russian flash read'},{c:'st',x:'Arabic+Mandarin vocab'},{c:'st',x:'Spanish reading'},{c:'st',x:'Spanish+Russian read'},{c:'st',x:'Russian+Spanish read'},{c:'st',x:'Backlog clearing'}]},
+  {t:'5:30 PM',b:[{c:'wk',x:'Walk home 1.5hr'},{c:'wk',x:'Walk home 1.5hr'},{c:'wk',x:'Walk home 1.5hr'},{c:'wk',x:'Walk home 1.5hr'},{c:'wk',x:'Walk home 1.5hr'},{c:'wk',x:'Walk home 1.5hr'},{c:'wk',x:'Walk home 1.5hr'}]},
+  {t:'7:00 PM',b:[{c:'sl',x:'Arrive home + rest'},{c:'sl',x:'Arrive home + rest'},{c:'sl',x:'Arrive home + rest'},{c:'sl',x:'Arrive home + rest'},{c:'sl',x:'Arrive home + rest'},{c:'sl',x:'Arrive home + rest'},{c:'sl',x:'Arrive home + rest'}]},
+  {t:'7:35 PM',b:[{c:'pr',x:'Maghrib home'},{c:'pr',x:'Maghrib home'},{c:'pr',x:'Maghrib home'},{c:'pr',x:'Maghrib home'},{c:'pr',x:'Maghrib home'},{c:'pr',x:'Maghrib home'},{c:'pr',x:'Maghrib home'}]},
+  {t:'7:50 PM',b:[{c:'st',x:'Quiz grind Arabic'},{c:'st',x:'Quiz grind Mandarin'},{c:'st',x:'Quiz grind Math'},{c:'st',x:'Quiz grind Physics'},{c:'st',x:'Quiz grind OrgChem'},{c:'st',x:'Quiz grind Science'},{c:'st',x:'Full quiz rotation'}]},
+  {t:'8:56 PM',b:[{c:'pr',x:'Isha home'},{c:'pr',x:'Isha home'},{c:'pr',x:'Isha home'},{c:'pr',x:'Isha home'},{c:'pr',x:'Isha home'},{c:'pr',x:'Isha home'},{c:'pr',x:'Isha home'}]},
+  {t:'9:15 PM',b:[{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'}]},
+  {t:'9:45 PM',b:[{c:'sl',x:'English journal'},{c:'sl',x:'English journal'},{c:'sl',x:'English journal'},{c:'sl',x:'English journal'},{c:'sl',x:'English journal'},{c:'sl',x:'English journal'},{c:'sl',x:'Full reset journal'}]},
+  {t:'10:15 PM',b:[{c:'sl',x:'Night shower'},{c:'sl',x:'Night shower'},{c:'sl',x:'Night shower'},{c:'sl',x:'Night shower'},{c:'sl',x:'Night shower'},{c:'sl',x:'Night shower'},{c:'sl',x:'Night shower'}]},
+  {t:'10:30 PM',b:[{c:'sl',x:'Sleep'},{c:'sl',x:'Sleep'},{c:'sl',x:'Sleep'},{c:'sl',x:'Sleep'},{c:'sl',x:'Sleep'},{c:'sl',x:'Sleep'},{c:'sl',x:'Sleep'}]},
 ];
 var DAYS=['MON','TUE','WED','THU','FRI','SAT','SUN'];
-var DAYNOTES=['Arabic Tutor','Mandarin Tutor','Math Tutor','Study','Study','Study','Study'];
+var DAYNOTES=['Arabic Tutor 10AM','Mandarin Tutor 10AM','Math Tutor 10AM','Physics+OrgChem','OrgChem+Neuro','Deep Science','System Reset'];
 
 function buildSchedule(){
   var h='<thead><tr><th>TIME</th>';
