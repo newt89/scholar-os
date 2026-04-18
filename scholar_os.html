@@ -874,7 +874,7 @@ var SCHED=[
   {t:'5:30 PM',b:[{c:'wk',x:'Walk home 1.5hr'},{c:'wk',x:'Walk home 1.5hr'},{c:'wk',x:'Walk home 1.5hr'},{c:'wk',x:'Walk home 1.5hr'},{c:'wk',x:'Walk home 1.5hr'},{c:'wk',x:'Walk home 1.5hr'},{c:'wk',x:'Walk home 1.5hr'}]},
   {t:'7:00 PM',b:[{c:'sl',x:'Arrive home + rest'},{c:'sl',x:'Arrive home + rest'},{c:'sl',x:'Arrive home + rest'},{c:'sl',x:'Arrive home + rest'},{c:'sl',x:'Arrive home + rest'},{c:'sl',x:'Arrive home + rest'},{c:'sl',x:'Arrive home + rest'}]},
   {t:'7:35 PM',b:[{c:'pr',x:'Maghrib home'},{c:'pr',x:'Maghrib home'},{c:'pr',x:'Maghrib home'},{c:'pr',x:'Maghrib home'},{c:'pr',x:'Maghrib home'},{c:'pr',x:'Maghrib home'},{c:'pr',x:'Maghrib home'}]},
-  {t:'7:50 PM',b:[{c:'st',x:'Quiz grind Arabic'},{c:'st',x:'Quiz grind Mandarin'},{c:'st',x:'Quiz grind Math'},{c:'st',x:'Quiz grind Physics'},{c:'st',x:'Quiz grind OrgChem'},{c:'st',x:'Quiz grind Science'},{c:'st',x:'Full quiz rotation'}]},
+  {t:'7:50 PM',b:[{c:'st',x:'Quiz grind + boot.dev Python'},{c:'st',x:'Quiz grind Mandarin'},{c:'st',x:'Quiz grind Math'},{c:'st',x:'Quiz grind Physics'},{c:'st',x:'Quiz grind OrgChem'},{c:'st',x:'Quiz grind Science'},{c:'st',x:'Full quiz rotation'}]},
   {t:'8:56 PM',b:[{c:'pr',x:'Isha home'},{c:'pr',x:'Isha home'},{c:'pr',x:'Isha home'},{c:'pr',x:'Isha home'},{c:'pr',x:'Isha home'},{c:'pr',x:'Isha home'},{c:'pr',x:'Isha home'}]},
   {t:'9:15 PM',b:[{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'},{c:'sl',x:'Dinner'}]},
   {t:'9:45 PM',b:[{c:'sl',x:'English journal'},{c:'sl',x:'English journal'},{c:'sl',x:'English journal'},{c:'sl',x:'English journal'},{c:'sl',x:'English journal'},{c:'sl',x:'English journal'},{c:'sl',x:'Full reset journal'}]},
@@ -1592,158 +1592,81 @@ function genCurry(type){
 // ══════════════════════════════════════════════
 var COURSES = {
   arabic: [
-    {title:'Arabic with Maha — YouTube Series',url:'https://youtube.com/c/ArabicWithMaha',level:'Beginner-Intermediate',type:'Video Series',desc:'Comprehensive MSA and Egyptian Arabic. Hundreds of free lessons.'},
-    {title:'Madinah Arabic Book 1-3 (Free PDF+Video)',url:'https://www.arabicpod101.com',level:'All Levels',type:'Textbook+Video',desc:'Classic Islamic Arabic curriculum. Free PDFs widely available.'},
-    {title:'Al-Arabiyya Bayna Yadayk — YouTube',url:'https://youtube.com',level:'Intermediate',type:'Textbook Video',desc:'The standard Modern Standard Arabic university textbook series.'},
-    {title:'Quran Companion App',url:'https://qurancompanion.com',level:'All',type:'App',desc:'Memorization tracking for Quran. Pairs with your Arabic study reps.'},
-    {title:'Duolingo Arabic (supplement only)',url:'https://duolingo.com',level:'Beginner',type:'App',desc:'Use only for vocabulary drilling alongside your main study.'},
+    {title:'Arabic with Maha — YouTube',url:'https://youtube.com/c/ArabicWithMaha',level:'Beginner-Intermediate',type:'Video Series',desc:'Comprehensive MSA and Egyptian Arabic. Hundreds of free lessons. Start here for listening and speaking.'},
+    {title:'LearnArabicwithAli — Quranic Arabic',url:'https://youtube.com',level:'Beginner',type:'YouTube',desc:'Quranic Arabic specifically. Perfect for your Al-Baqarah work and classical Arabic.'},
+    {title:'Madinah Arabic Book 1-3',url:'https://youtube.com',level:'All Levels',type:'Textbook+Video',desc:'The standard Islamic Arabic curriculum. Free PDFs and YouTube videos available. Structured grammar path.'},
+    {title:'Lane Lexicon (Classical Arabic Dictionary)',url:'https://lexicon.quranic-research.net',level:'Intermediate+',type:'Reference',desc:'The definitive classical Arabic dictionary. Use when reading Ibn Khaldun, Ibn Hazm.'},
+    {title:'Google Scholar in Arabic',url:'https://scholar.google.com',level:'Advanced',type:'Research',desc:'Search your scientific topics in Arabic. Builds domain-specific vocabulary fast.'},
+  ],
+  mandarin: [
+    {title:'HSK Standard Course 1-2 (Free PDFs)',url:'https://youtube.com',level:'Beginner',type:'Textbook',desc:'Official HSK curriculum. Start with HSK 1 (150 words) then HSK 2 (300 words). Your current target.'},
+    {title:'ChinesePod — Free Episodes',url:'https://chinesepod.com',level:'Beginner-Intermediate',type:'Audio',desc:'Conversational Mandarin. Excellent for tones and natural speech patterns.'},
+    {title:'Pleco Dictionary App',url:'https://pleco.com',level:'All',type:'App',desc:'The best Mandarin dictionary. Free version excellent. Use during all reading sessions.'},
+    {title:'MDBG Chinese Dictionary',url:'https://www.mdbg.net',level:'All',type:'Reference',desc:'Free online Mandarin dictionary with stroke order and audio.'},
+    {title:'Yoyo Chinese — Grammar',url:'https://youtube.com/@yoyochinese',level:'Beginner-Intermediate',type:'YouTube',desc:'Clear grammar explanations in English. Good for understanding sentence structure.'},
   ],
   orgchem: [
-    {title:'Khan Academy Organic Chemistry',url:'https://khanacademy.org/science/organic-chemistry',level:'Intro-Advanced',type:'Free Course',desc:'Complete org chem from structure to retrosynthesis. Your current curriculum.'},
-    {title:'Professor Dave Explains — Org Chem',url:'https://youtube.com/@ProfessorDaveExplains',level:'Undergrad',type:'YouTube',desc:'Best free org chem videos. Clear mechanism explanations. SN1/SN2/E1/E2 especially.'},
-    {title:'Organic Chemistry Tutor — YouTube',url:'https://youtube.com/@TheOrganicChemistryTutor',level:'Undergrad',type:'YouTube',desc:'Thousands of solved problems. Ideal for drilling mechanisms.'},
-    {title:'MIT OCW 5.12 Organic Chemistry I',url:'https://ocw.mit.edu/courses/5-12-organic-chemistry-i-spring-2005',level:'Undergrad',type:'MIT OpenCourseWare',desc:'Full MIT course. Lectures, exams, problem sets. Free.'},
-    {title:'MIT OCW 5.13 Organic Chemistry II',url:'https://ocw.mit.edu/courses/5-13-organic-chemistry-ii-fall-2003',level:'Undergrad',type:'MIT OpenCourseWare',desc:'Continuation. Carbonyl chemistry, pericyclic, retrosynthesis.'},
-    {title:'Coursera: Advanced Chemistry (audit free)',url:'https://coursera.org',level:'Advanced',type:'MOOC',desc:'Audit for free. Various university org chem courses available.'},
+    {title:'PHASE 0 — Khan Academy Org Chem',url:'https://khanacademy.org/science/organic-chemistry',level:'Beginner',type:'Free Course',desc:'Start here. Complete every exercise. SN1/SN2/E1/E2 and carbonyl chemistry first.'},
+    {title:'PHASE 0 — Professor Dave Explains Org Chem',url:'https://youtube.com/@ProfessorDaveExplains',level:'Beginner-Intermediate',type:'YouTube',desc:'Best free org chem on YouTube. Clear mechanism explanations. Watch alongside Khan Academy.'},
+    {title:'PHASE 0 — The Organic Chemistry Tutor',url:'https://youtube.com/@TheOrganicChemistryTutor',level:'All',type:'YouTube',desc:'Thousands of solved problems. Use for visualization of every mechanism. Drill wrong problems.'},
+    {title:'PHASE 1 — MIT OCW 5.12 Org Chem I',url:'https://ocw.mit.edu/courses/5-12-organic-chemistry-i-spring-2005',level:'Undergrad',type:'MIT OpenCourseWare',desc:'Primary learning source. Do ALL problem sets. Re-do wrong problems until automatic.'},
+    {title:'PHASE 2 — MIT OCW 5.13 Org Chem II',url:'https://ocw.mit.edu/courses/5-13-organic-chemistry-ii-fall-2003',level:'Undergrad',type:'MIT OpenCourseWare',desc:'Advanced stereochemistry, spectroscopy intro, synthesis methods. Continue problem set discipline.'},
+    {title:'PHASE 3 — MIT Hard Exam Problems',url:'https://ocw.mit.edu',level:'Advanced',type:'Problem Sets',desc:'Mechanistic dominance phase. Timed, no notes. Electron pushing becomes automatic.'},
+    {title:'PHASE 4 — Spectroscopy (NMR/IR/MS)',url:'https://ocw.mit.edu',level:'Intermediate',type:'MIT Materials',desc:'1H NMR, 13C NMR, IR, mass spec. Given spectrum → determine structure. Do 50+ problems. Critical gap.'},
+    {title:'PHASE 5 — Retrosynthesis Daily Training',url:'https://youtube.com',level:'Advanced',type:'Practice System',desc:'Pick molecule → break into precursors → validate reactions. Daily. MIT advanced problems + YouTube synthesis cases.'},
+    {title:'PHASE 6 — JACS + RSC Journals',url:'https://pubs.acs.org/journal/jacsat',level:'PhD',type:'Research',desc:'American Chemical Society and Royal Society of Chemistry. Total synthesis, catalysis, photoredox. Start reading even at 10% comprehension.'},
+    {title:'PHASE 7 — RDKit Python Chemistry',url:'https://www.rdkit.org',level:'PhD',type:'Computational',desc:'Build reaction simulator. Represent molecules as graphs. Retrosynthesis engine using BFS/A*. Your computational advantage.'},
   ],
   physics: [
-    {title:'Khan Academy Physics',url:'https://khanacademy.org/science/physics',level:'Intro-Advanced',type:'Free Course',desc:'Classical mechanics through quantum. Your starting point.'},
-    {title:'MIT OCW 8.01 Classical Mechanics',url:'https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016',level:'Undergrad',type:'MIT OpenCourseWare',desc:'Full MIT intro physics. Walter Lewin lectures are legendary.'},
-    {title:'MIT OCW 8.02 Electricity and Magnetism',url:'https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2007',level:'Undergrad',type:'MIT OpenCourseWare',desc:'Walter Lewin. Best electromagnetism lectures ever recorded.'},
-    {title:'MIT OCW 8.03 Waves and Vibrations',url:'https://ocw.mit.edu/courses/8-03sc-physics-iii-vibrations-and-waves-fall-2016',level:'Undergrad',type:'MIT OpenCourseWare',desc:'Waves, optics, acoustics. Free full course.'},
-    {title:'Leonard Susskind — Classical Mechanics (Stanford)',url:'https://youtube.com/@stanford',level:'Graduate',type:'YouTube/Stanford',desc:'Theoretical minimum series. Classical → quantum → statistical mechanics. PhD-prep.'},
-    {title:'Leonard Susskind — Quantum Mechanics',url:'https://youtube.com/@stanford',level:'Graduate',type:'YouTube/Stanford',desc:'Quantum mechanics from first principles. Graduate level. Free.'},
-    {title:'Leonard Susskind — Special Relativity',url:'https://youtube.com/@stanford',level:'Graduate',type:'YouTube/Stanford',desc:'Special and general relativity from Susskind himself. Free.'},
-    {title:'Feynman Lectures on Physics (FREE online)',url:'https://feynmanlectures.caltech.edu',level:'Undergrad-Grad',type:'Textbook Online',desc:'The greatest physics textbook. Free online. Read alongside Khan Academy.'},
+    {title:'PHASE 1 — Khan Academy Physics',url:'https://khanacademy.org/science/physics',level:'Beginner',type:'Free Course',desc:'Start here. Complete every exercise. Kinematics → Newton → Energy → Momentum.'},
+    {title:'PHASE 1 — MIT OCW 8.01 Walter Lewin',url:'https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016',level:'Undergrad',type:'MIT OpenCourseWare',desc:'Watch every lecture. Do every problem set. Walter Lewin is the best physics teacher ever recorded.'},
+    {title:'PHASE 1 — OpenStax University Physics Vol 1',url:'https://openstax.org/details/books/university-physics-volume-1',level:'Undergrad',type:'Free Textbook',desc:'Free full textbook. Supplement to MIT 8.01 lectures.'},
+    {title:'PHASE 2 — MIT OCW 8.02 E&M Walter Lewin',url:'https://ocw.mit.edu/courses/8-02sc-physics-ii-electricity-and-magnetism-fall-2010',level:'Undergrad',type:'MIT OpenCourseWare',desc:'Electricity and magnetism. Griffiths Electrodynamics textbook alongside.'},
+    {title:'PHASE 2 — MIT OCW 8.03 Waves',url:'https://ocw.mit.edu/courses/8-03sc-physics-iii-vibrations-and-waves-fall-2016',level:'Undergrad',type:'MIT OpenCourseWare',desc:'Waves, vibrations, optics. OpenStax Vol 3 free textbook alongside.'},
+    {title:'PHASE 3 — Arfken Mathematical Methods',url:'https://youtube.com',level:'Intermediate',type:'Textbook',desc:'Mathematical Methods for Physicists. Vector calculus, PDEs, complex analysis. Search PDF.'},
+    {title:'PHASE 4 — MIT OCW 8.04 Quantum Physics I',url:'https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2013',level:'Upper Undergrad',type:'MIT OpenCourseWare',desc:'Quantum mechanics. Griffiths QM textbook. Susskind lectures at theoreticalminimum.com free.'},
+    {title:'PHASE 4 — Susskind Theoretical Minimum',url:'https://theoreticalminimum.com',level:'Upper Undergrad',type:'Free Lectures',desc:'Leonard Susskind Stanford. Classical mechanics → QM → Statistical mechanics. All free.'},
+    {title:'PHASE 5 — Computational Physics Python',url:'https://github.com',level:'Intermediate+',type:'Project',desc:'NumPy, SciPy, Matplotlib. Simulate n-body, chaos, FDTD, Schrodinger equation. Theory confirmed by code.'},
+    {title:'PHASE 6 — Feynman Lectures',url:'https://feynmanlectures.caltech.edu',level:'All',type:'Free Textbook',desc:'All 3 volumes free online. The greatest physics writing ever. Read alongside your courses.'},
+    {title:'PHASE 7 — arXiv Physics',url:'https://arxiv.org',level:'PhD',type:'Research',desc:'Reproduce published papers. Derive equations. Simulate models. Compare to paper results.'},
   ],
   mathematics: [
-    {title:'Khan Academy Mathematics (GED→Calculus)',url:'https://khanacademy.org/math',level:'GED→Calc I',type:'Free Course',desc:'Your current curriculum. Pre-algebra through calculus. Complete everything.'},
-    {title:'MIT OCW 18.01 Single Variable Calculus',url:'https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010',level:'Undergrad',type:'MIT OpenCourseWare',desc:'Full MIT Calculus I. After you finish Khan Academy calculus.'},
-    {title:'MIT OCW 18.02 Multivariable Calculus',url:'https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010',level:'Undergrad',type:'MIT OpenCourseWare',desc:'Calculus II+III. Required for physics and pure math.'},
-    {title:'MIT OCW 18.06 Linear Algebra (Gilbert Strang)',url:'https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011',level:'Undergrad',type:'MIT OpenCourseWare',desc:'The best linear algebra course in existence. Free. Essential for physics PhD.'},
-    {title:'3Blue1Brown — Essence of Calculus',url:'https://youtube.com/@3blue1brown',level:'Visual/Undergrad',type:'YouTube',desc:'Visual intuition for calculus. Watch before Khan Academy chapters. Changes how you see it.'},
-    {title:'3Blue1Brown — Essence of Linear Algebra',url:'https://youtube.com/@3blue1brown',level:'Visual/Undergrad',type:'YouTube',desc:'Visual linear algebra. Best supplement to MIT 18.06.'},
-    {title:'MIT OCW 18.100 Real Analysis',url:'https://ocw.mit.edu/courses/18-100a-introduction-to-analysis-fall-2012',level:'Pure Math Undergrad',type:'MIT OpenCourseWare',desc:'Entry to pure mathematics. After calculus. Proof-based.'},
-    {title:'Pauls Online Math Notes',url:'https://tutorial.math.lamar.edu',level:'Calc I-III+',type:'Free Notes',desc:'Best free math reference. Clear worked examples for all calc levels.'},
+    {title:'PHASE 0 — Khan Academy Math (NOW)',url:'https://khanacademy.org/math',level:'GED',type:'Free Course',desc:'Your current curriculum. Arithmetic through calculus. Complete every exercise to mastery.'},
+    {title:'PHASE 0 — Paul Online Math Notes',url:'https://tutorial.math.lamar.edu',level:'Calc I-III',type:'Free Notes',desc:'Best free math reference. Clear worked examples. Use alongside Khan Academy.'},
+    {title:'PHASE 1 — MIT OCW 18.01 Calculus I',url:'https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010',level:'Undergrad',type:'MIT OpenCourseWare',desc:'After Khan Calc I. Full MIT rigor. Do all problem sets.'},
+    {title:'PHASE 1 — 3Blue1Brown Essence of Calculus',url:'https://youtube.com/@3blue1brown',level:'Visual',type:'YouTube',desc:'Watch before each Khan chapter. Visual intuition changes how you see calculus permanently.'},
+    {title:'PHASE 2 — MIT OCW 18.06 Linear Algebra (Strang)',url:'https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011',level:'Undergrad',type:'MIT OpenCourseWare',desc:'THE best linear algebra course. Build eigenvalue solvers in Python alongside.'},
+    {title:'PHASE 2 — MIT OCW 18.03 Differential Equations',url:'https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011',level:'Undergrad',type:'MIT OpenCourseWare',desc:'ODEs, Laplace transforms, systems. Build RK4 solver in Python.'},
+    {title:'PHASE 3 — MIT OCW 18.100 Real Analysis',url:'https://ocw.mit.edu/courses/18-100a-introduction-to-analysis-fall-2012',level:'Upper Undergrad',type:'MIT OpenCourseWare',desc:'Entry to pure mathematics. Epsilon-delta proofs. Terence Tao Analysis I+II alongside (free PDF).'},
+    {title:'PHASE 4 — Dummit and Foote Abstract Algebra',url:'https://youtube.com',level:'Graduate',type:'Textbook',desc:'Search PDF. The standard graduate algebra text. Groups, rings, fields, Galois theory.'},
+    {title:'PHASE 4 — Munkres Topology',url:'https://youtube.com',level:'Graduate',type:'Textbook',desc:'Search PDF. Point-set topology. The standard topology text. Read after real analysis.'},
+    {title:'PHASE 6 — Specialization',url:'https://arxiv.org',level:'PhD',type:'Research',desc:'Pure Math: Algebraic Topology → Category Theory. Physics: Functional Analysis → QM. AI: Optimization → Information Theory.'},
+    {title:'boot.dev — Python for Backend',url:'https://boot.dev',level:'Beginner-Intermediate',type:'Paid Course (last resort)',desc:'Structured Python path. Use free resources first. Only if you need structured coding alongside math.'},
   ],
   neuroscience: [
-    {title:'Khan Academy — Nervous System',url:'https://khanacademy.org/science/health-and-medicine/nervous-system-and-sensory-infor',level:'Intro',type:'Free Course',desc:'Neural anatomy, action potentials, synaptic transmission. Start here.'},
-    {title:'MIT OCW 9.01 Neuroscience and Behavior',url:'https://ocw.mit.edu/courses/9-01-neuroscience-and-behavior-fall-2003',level:'Undergrad',type:'MIT OpenCourseWare',desc:'Full MIT intro neuroscience. Free lectures, notes, exams.'},
-    {title:'Neuroscientifically Challenged — YouTube',url:'https://youtube.com/@neuroscientificallychallenged',level:'Intro-Intermediate',type:'YouTube',desc:'2-Minute Neuroscience series. Covers every major brain structure and function.'},
-    {title:'Stanford — Human Behavioral Biology (Robert Sapolsky)',url:'https://youtube.com/playlist?list=PL848F2368C90DDC3D',level:'Undergrad-Grad',type:'YouTube/Stanford',desc:'Best neuroscience+behavior course ever recorded. Free. 25 lectures. Watch all.'},
-    {title:'Kandel — Principles of Neural Science Lectures',url:'https://youtube.com',level:'Graduate',type:'Video Lectures',desc:'Based on your book. Search YouTube for lecture series on Principles of Neural Science.'},
-    {title:'Coursera: Neuroscience and Neuroimaging (JHU)',url:'https://coursera.org',level:'Intermediate',type:'MOOC',desc:'Johns Hopkins. Audit free. Brain imaging, functional anatomy.'},
-    {title:'Crash Course Neuroscience',url:'https://youtube.com/@crashcourse',level:'Intro',type:'YouTube',desc:'Quick visual overview of entire nervous system. Good for review.'},
+    {title:'PHASE 1 — OpenStax Anatomy and Physiology',url:'https://openstax.org/details/books/anatomy-and-physiology',level:'Beginner',type:'Free Textbook',desc:'Free full textbook. Start here before anything else. Build anatomical foundation.'},
+    {title:'PHASE 1 — Kenhub Neuroanatomy',url:'https://kenhub.com',level:'Beginner-Intermediate',type:'Interactive Atlas',desc:'Identify every structure on real images. 100% quiz score before advancing. Non-negotiable.'},
+    {title:'PHASE 1 — BrainFacts 3D Brain',url:'https://brainfacts.org/3d-brain',level:'All',type:'Interactive',desc:'Free 3D interactive brain. Every region labeled. Use daily alongside reading.'},
+    {title:'PHASE 1 — The Noted Anatomist',url:'https://youtube.com/@TheNotedAnatomist',level:'Beginner',type:'YouTube',desc:'Cadaveric dissections, neuroanatomy. Real specimens, not diagrams.'},
+    {title:'PHASE 2 — Osmosis Neurology',url:'https://osmosis.org',level:'Intermediate',type:'Video+Cards',desc:'Every neurology video + all flashcards. Spaced repetition. Complete before advancing.'},
+    {title:'PHASE 2 — AMBOSS Neuroanatomy',url:'https://amboss.com',level:'Intermediate',type:'Knowledge+Questions',desc:'Articles + question bank. Read every explanation. Target 80%+ before moving on.'},
+    {title:'PHASE 2 — Sapolsky Stanford Lectures',url:'https://youtube.com/playlist?list=PL848F2368C90DDC3D',level:'Undergrad',type:'YouTube',desc:'25 lectures. Human Behavioral Biology. The best neuroscience course ever recorded. Watch all.'},
+    {title:'PHASE 3 — Radiopaedia',url:'https://radiopaedia.org',level:'Intermediate',type:'Imaging Cases',desc:'CT and MRI case interpretation. Practice 50+ cases. Think like a neurologist.'},
+    {title:'PHASE 3 — MIT OCW 9.01 Neuroscience',url:'https://ocw.mit.edu/courses/9-01-neuroscience-and-behavior-fall-2003',level:'Undergrad',type:'MIT OpenCourseWare',desc:'Full MIT neuroscience course. Lectures, notes, exams. Free.'},
+    {title:'PHASE 5 — Python Neuron Simulation',url:'https://neuron.yale.edu',level:'Advanced',type:'Computational',desc:'NEURON simulator (free). Hodgkin-Huxley model. Build from scratch in Python first, then use NEURON.'},
+    {title:'PHASE 7 — PubMed + arXiv',url:'https://pubmed.ncbi.nlm.nih.gov',level:'PhD',type:'Research',desc:'Brain-computer interfaces, tumor growth modeling, neural signal decoding, DBS optimization.'},
   ],
   surgery: [
-    {title:'Lecturio — Free Surgery Videos',url:'https://lecturio.com',level:'Medical Student',type:'Video Library',desc:'Large free library. Brain, spine, cardiac, general surgery techniques.'},
-    {title:'WebSurg — Surgical Video Library (Free)',url:'https://websurg.com',level:'Advanced',type:'Surgical Videos',desc:'Actual surgical procedures recorded. Laparoscopic, open, neurosurgery. Free registration.'},
-    {title:'YouTube: The Noted Anatomist',url:'https://youtube.com/@TheNotedAnatomist',level:'Anatomy',type:'YouTube',desc:'Cadaveric anatomy. Brain dissections. Spinal cord. Neuroanatomy.'},
-    {title:'Osmosis — Neurology (Free Tier)',url:'https://osmosis.org',level:'Medical Student',type:'Video+Cards',desc:'High-yield neurology and neurosurgery concepts. Good visual explanations.'},
-    {title:'AMBOSS — Neurosurgery (limited free)',url:'https://amboss.com',level:'Medical Student',type:'Reference',desc:'Medical knowledge platform. Free limited access. Comprehensive surgery content.'},
-    {title:'YouTube: NJ Neurology — Brain Surgery Explained',url:'https://youtube.com',level:'Intro',type:'YouTube',desc:'Search "brain tumor surgery explained" "craniotomy procedure" "DBS surgery" for procedure videos.'},
-    {title:'3D Brain Atlas (BrainFacts.org)',url:'https://brainfacts.org/3d-brain',level:'All Levels',type:'Interactive',desc:'Free 3D interactive brain. Every region labeled. Use alongside Principles of Neural Science.'},
-    {title:'Kenhub — Neuroanatomy',url:'https://kenhub.com',level:'Anatomy',type:'Interactive Atlas',desc:'Neuroanatomy atlas with quizzes. Free tier available. Brain, spinal cord, cranial nerves.'},
-  ]
+    {title:'PHASE 1 — WebSurg Surgical Videos',url:'https://websurg.com',level:'Beginner',type:'Surgical Videos',desc:'Free registration. Real craniotomies, spine surgery, DBS. Watch technique not just procedure.'},
+    {title:'PHASE 1 — Class Central Brain Tumor Series',url:'https://classcentral.com/classroom/youtube-advances-in-surgical-and-non-surgical-treatment-of-brain-tumors-149671',level:'Intermediate',type:'Lecture Series',desc:'The series you found. Continue watching all lectures.'},
+    {title:'PHASE 2 — Lecturio Surgery',url:'https://lecturio.com',level:'Medical Student',type:'Video Library',desc:'Free tier. Anatomy, surgical principles, neurosurgery procedures. COMAT Surgery path.'},
+    {title:'PHASE 3 — Radiopaedia Imaging',url:'https://radiopaedia.org',level:'Intermediate',type:'Cases',desc:'Read brain scans like a neurosurgeon. CT head, MRI brain, identify pathology.'},
+    {title:'PHASE 4 — YouTube Surgical Procedures',url:'https://youtube.com',level:'All',type:'YouTube',desc:'Search: craniotomy step by step, DBS surgery, aneurysm clipping, spinal fusion, awake craniotomy.'},
+    {title:'PHASE 5 — FreeCAD 3D Skull Model',url:'https://freecad.org',level:'Advanced',type:'Software',desc:'Design and 3D print skull model for drill practice. Build gel brain model for physical intuition.'},
+    {title:'PHASE 5 — Python Neural Dynamics',url:'https://python.org',level:'Advanced',type:'Computational',desc:'Model Cm dV/dt = -gL(V-EL) + I(t). Blood/CSF flow. Surgical trajectory optimization.'},
+    {title:'PHASE 7 — Journal of Neurosurgery',url:'https://thejns.org',level:'PhD',type:'Research',desc:'Primary literature. Brain-computer interfaces, tumor growth, DBS optimization. Read 1 paper/week.'},
+  ],
 };
-
-// ══════════════════════════════════════════════
-// EXPANDED QUIZ BANKS — NEUROSCIENCE + SURGERY + PHYSICS + MATH ADVANCED
-// ══════════════════════════════════════════════
-var EXTRA_QBANK = {
-  neuroscience: [
-    {q:'The hippocampus is primarily involved in...',a:'Memory formation and spatial navigation',o:['Memory formation and spatial navigation','Regulating heartbeat','Processing visual input','Controlling voluntary movement']},
-    {q:'Action potentials are generated when membrane potential reaches...',a:'Threshold (~-55mV)',o:['Threshold (~-55mV)','Resting potential (-70mV)','Zero potential','Maximum depolarization only']},
-    {q:'The blood-brain barrier is formed by...',a:'Tight junctions between endothelial cells',o:['Tight junctions between endothelial cells','Myelin sheaths','Astrocyte foot processes alone','Cerebrospinal fluid']},
-    {q:'Brocas area controls...',a:'Speech production',o:['Speech production','Speech comprehension','Vision','Hearing']},
-    {q:'Dopamine is associated with...',a:'Reward, motivation, and motor control',o:['Reward, motivation, and motor control','Sleep only','Pain modulation only','Heart rate regulation']},
-    {q:'The cerebellum coordinates...',a:'Balance, fine motor control, and timing',o:['Balance, fine motor control, and timing','Conscious thought','Emotion and memory','Language production']},
-    {q:'Myelin sheaths are produced by...',a:'Oligodendrocytes (CNS) and Schwann cells (PNS)',o:['Oligodendrocytes (CNS) and Schwann cells (PNS)','Astrocytes','Microglia','Neurons themselves']},
-    {q:'The amygdala processes...',a:'Fear, emotion, and threat detection',o:['Fear, emotion, and threat detection','Language','Visual processing','Motor commands']},
-    {q:'Serotonin deficiency is linked to...',a:'Depression and mood disorders',o:['Depression and mood disorders','Parkinsons disease','Alzheimers disease','Epilepsy']},
-    {q:'CSF (cerebrospinal fluid) is produced by...',a:'Choroid plexus',o:['Choroid plexus','Meninges','Blood-brain barrier','Ventricular walls directly']},
-    {q:'The frontal lobe is responsible for...',a:'Executive function, planning, and personality',o:['Executive function, planning, and personality','Primary vision','Primary hearing','Spatial processing']},
-    {q:'A stroke in the middle cerebral artery territory causes...',a:'Contralateral hemiplegia and aphasia (if dominant)',o:['Contralateral hemiplegia and aphasia (if dominant)','Ipsilateral blindness only','Cerebellar ataxia','Loss of smell']},
-  ],
-  surgery: [
-    {q:'A craniotomy involves...',a:'Temporary removal of a bone flap to access the brain',o:['Temporary removal of a bone flap to access the brain','Permanent skull removal','Drilling a burr hole only','Spinal cord exposure']},
-    {q:'The most common brain tumor in adults is...',a:'Glioblastoma multiforme (GBM)',o:['Glioblastoma multiforme (GBM)','Meningioma','Schwannoma','Pituitary adenoma']},
-    {q:'Deep brain stimulation (DBS) targets which structure for Parkinsons?',a:'Subthalamic nucleus',o:['Subthalamic nucleus','Hippocampus','Amygdala','Cerebellum']},
-    {q:'An epidural hematoma is caused by rupture of...',a:'Middle meningeal artery',o:['Middle meningeal artery','Bridging veins','Cerebral cortex vessels','Dural sinuses']},
-    {q:'A subdural hematoma is caused by rupture of...',a:'Bridging veins',o:['Bridging veins','Middle meningeal artery','Circle of Willis','Spinal arteries']},
-    {q:'The Glasgow Coma Scale measures...',a:'Eye opening, verbal response, and motor response',o:['Eye opening, verbal response, and motor response','Only motor response','Pupil response only','Brain stem reflexes only']},
-    {q:'Hydrocephalus is treated with...',a:'Ventriculoperitoneal (VP) shunt',o:['Ventriculoperitoneal (VP) shunt','Craniotomy','Burr hole drainage','Lumbar puncture only']},
-    {q:'The Circle of Willis connects...',a:'Anterior and posterior cerebral circulation',o:['Anterior and posterior cerebral circulation','Left and right motor cortex','Cerebellum to brainstem','Temporal lobes']},
-    {q:'Cushings triad (hypertension + bradycardia + irregular breathing) indicates...',a:'Increased intracranial pressure',o:['Increased intracranial pressure','Cardiac arrest','Spinal cord injury','Meningitis']},
-    {q:'The most common site for cerebral aneurysms is...',a:'Anterior communicating artery',o:['Anterior communicating artery','Middle cerebral artery','Posterior cerebral artery','Basilar artery']},
-  ],
-  physics_adv: [
-    {q:'Newtons second law states...',a:'F = ma (force equals mass times acceleration)',o:['F = ma','E = mc²','F = mv','p = mv']},
-    {q:'The work-energy theorem states...',a:'Net work done = change in kinetic energy',o:['Net work done = change in kinetic energy','Work = force only','Energy = mass × gravity','Work = mass × velocity']},
-    {q:'In simple harmonic motion, period T =',a:'2π√(m/k)',o:['2π√(m/k)','2π√(k/m)','√(m/k)','2π(m/k)']},
-    {q:'Snells law of refraction: n₁sin θ₁ =',a:'n₂sin θ₂',o:['n₂sin θ₂','n₂cos θ₂','n₁sin θ₂','n₁/n₂']},
-    {q:'The speed of light in a vacuum is approximately...',a:'3 × 10⁸ m/s',o:['3 × 10⁸ m/s','3 × 10⁶ m/s','3 × 10¹⁰ m/s','1.5 × 10⁸ m/s']},
-    {q:'Coulombs law gives force between charges as...',a:'F = kq₁q₂/r²',o:['F = kq₁q₂/r²','F = kq/r','F = q₁q₂/r','F = k/r²']},
-    {q:'The de Broglie wavelength λ =',a:'h/p (Planck constant / momentum)',o:['h/p','h×p','p/h','mc²']},
-    {q:'In special relativity, time dilation means...',a:'Moving clocks run slower',o:['Moving clocks run slower','Moving clocks run faster','Time stops at light speed','Time is absolute']},
-  ],
-  math_adv: [
-    {q:'The fundamental theorem of calculus states...',a:'∫ f(x)dx from a to b = F(b) - F(a)',o:['∫ f(x)dx from a to b = F(b) - F(a)','d/dx∫f = 0','∫ = F(a) only','∫ f(x)dx = f prime(x)']},
-    {q:'A function is continuous at x=a if...',a:'lim(x→a) f(x) = f(a)',o:['lim(x→a) f(x) = f(a)','f(a) = 0','f prime(a) exists','f(a) is defined only']},
-    {q:'The chain rule: d/dx[f(g(x))] =',a:"f prime(g(x)) · g prime(x)",o:["f prime(g(x)) · g prime(x)","f prime(x) · g prime(x)","f prime(g(x)) only","f(g prime(x))"]},
-    {q:'By LHôpitals rule, 0/0 form: lim f/g =',a:"lim f prime / g prime",o:["lim f prime / g prime","lim f×g","lim f-g","lim g'/f'"]},
-    {q:'A prime number is...',a:'Divisible only by 1 and itself, greater than 1',o:['Divisible only by 1 and itself, greater than 1','Any odd number','Any number > 2','Divisible by 2 only']},
-    {q:'The product rule: d/dx[f·g] =',a:"fg + fg prime",o:["fg + fg prime","fg prime","f'·g'·x","(f+g)'"]},
-    {q:'∫ eˣ dx =',a:'eˣ + C',o:['eˣ + C','eˣ·x + C','e^(x+1) + C','ln(x) + C']},
-    {q:'The determinant of [[a,b],[c,d]] =',a:'ad - bc',o:['ad - bc','ab - cd','ac + bd','ad + bc']},
-  ]
-};
-
-// Merge extra quiz banks into main QBANK
-Object.keys(EXTRA_QBANK).forEach(function(k){ QBANK[k] = EXTRA_QBANK[k]; });
-
-// Update quiz language selector
-function updateQuizSelector(){
-  var sel=document.getElementById('qlang');if(!sel)return;
-  var extras=['neuroscience','surgery','physics_adv','math_adv'];
-  var labels={neuroscience:'Neuroscience',surgery:'Neurosurgery',physics_adv:'Physics Advanced',math_adv:'Mathematics Advanced'};
-  extras.forEach(function(k){
-    if(!sel.querySelector('option[value="'+k+'"]')){
-      var opt=document.createElement('option');opt.value=k;opt.textContent=labels[k];sel.appendChild(opt);
-    }
-  });
-}
-
-// ══════════════════════════════════════════════
-// WEEKLY MEAL PLAN GENERATOR
-// ══════════════════════════════════════════════
-function genFullWeekPlan(){
-  var days=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
-  var plan={};
-
-  // Structured weekly rotation based on preferences
-  var breakfasts=[
-    {f:'Onigiri',type:'onigiri'},
-    {f:'PB&J',type:'pbj'},
-    {f:'Onigiri',type:'onigiri'},
-    {f:'PB&J',type:'pbj'},
-    {f:'Onigiri',type:'onigiri'},
-    {f:'Onigiri',type:'onigiri'},
-    {f:'PB&J',type:'pbj'},
-  ];
-  var lunches=['Hot Pot','Curry','Sushi Rolls','Hot Pot','Onigiri','Curry','Sushi Rolls'];
-  var dinners=['Chicken Curry','Hot Pot','Korma','Sushi Rolls','Hot Pot','Chicken Curry','Hot Pot'];
-
-  days.forEach(function(day,i){
-    plan[day+'_Breakfast']=breakfasts[i].f;
-    plan[day+'_Lunch']=lunches[i];
-    plan[day+'_Dinner']=dinners[i];
-  });
-
-  Sv('mealPlan',plan);
-  buildMealGrid();
-  toast('Weekly plan generated','g');
-}
 
 
 function showCourses(subject){
