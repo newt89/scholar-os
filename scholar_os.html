@@ -205,7 +205,7 @@ nav{flex:1;padding:10px 0;overflow-y:auto}
     <div class="slogo">
       <div class="slogo-t">SCHOLAR OS</div>
       <div class="slogo-u">◈ ANDRE</div>
-      <div class="slogo-n">NODE: 13" HOME</div>
+      <div class="slogo-n">NODE: 17" ARCH</div>
     </div>
     <nav>
       <div class="ng">OVERVIEW</div>
@@ -228,10 +228,18 @@ nav{flex:1;padding:10px 0;overflow-y:auto}
       <div class="ng">SYSTEM</div>
       <div class="ni" data-p="courses">◈ Courses</div>
       <div class="ni" data-p="sync">⟳ Sync</div>
+      <div class="ng">R&amp;D LAB OS</div>
+      <div class="ni" data-p="projects">⬡ Projects</div>
+      <div class="ni" data-p="lab">⚗ Lab Constitution</div>
+      <div class="ni" data-p="experiments">◈ Experiments</div>
+      <div class="ni" data-p="literature">▣ Literature</div>
+      <div class="ni" data-p="manufacturing">⊞ Manufacturing</div>
+      <div class="ni" data-p="decision">◆ Decision Engine</div>
+      <div class="ni" data-p="growth">◉ Growth Map</div>
     </nav>
     <div class="sstat">
-      <div><span class="dot on"></span>13" MacBook · Home</div>
-      <div><span class="dot off"></span>17" MacBook · Away</div>
+      <div><span class="dot on"></span>17" MacBook · Library</div>
+      
       <div id="lastSync" style="margin-top:3px">Ready</div>
     </div>
     <button class="lout" onclick="doLogout()">[ LOGOUT ]</button>
@@ -239,7 +247,7 @@ nav{flex:1;padding:10px 0;overflow-y:auto}
 
   <main class="main">
     <div class="topbar">
-      <div class="tgoal">⬡ MISSION: Nuclear Eng BSc → Pure Math MSc → Pure Math PhD → Physics PhD · Publish · 7 Languages</div>
+      <div class="tgoal">⬡ MISSION: Nuclear Eng BSc → Pure Math MSc/PhD → Physics PhD · R&D Lab · 20+ Research Papers · 2 Books · 7 Languages</div>
       <div class="tright"><span id="tdate"></span><span class="tclock" id="tclock"></span></div>
     </div>
 
@@ -264,7 +272,6 @@ nav{flex:1;padding:10px 0;overflow-y:auto}
         <div class="card cgr"><div class="clabel">Weekly Miles — Last 4 Weeks</div><div class="chart-wrap"><canvas id="milesChart"></canvas></div></div>
       </div>
       <div class="g3">
-        <div class="card cg"><div class="clabel">Prayer Times</div><div style="font-family:var(--mono);font-size:10px;line-height:2.3;color:var(--tx)"><div>Fajr <span style="color:var(--gold);float:right">4:52 AM</span></div><div>Dhuhr <span style="color:var(--gold);float:right">12:53 PM</span></div><div>Asr <span style="color:var(--gold);float:right">5:37 PM</span></div><div>Maghrib <span style="color:var(--gold);float:right">7:35 PM</span></div><div>Isha <span style="color:var(--gold);float:right">8:56 PM</span></div></div></div>
         <div class="card ca"><div class="clabel">Current Focus</div><div style="font-family:var(--mono);font-size:10px;line-height:2.3;color:var(--tx)"><div>Arabic <span style="color:var(--gold);float:right">Phase 1.5</span></div><div>Quran <span style="color:var(--gold);float:right">Arabic study</span></div><div>GED Math <span style="color:var(--ac);float:right">Mon Tutor</span></div><div>Arabic Tutor <span style="color:var(--gold);float:right">Wed 9-10 AM</span></div><div>Org Chem <span style="color:var(--ac);float:right">Apr 2026</span></div><div>Running <span style="color:var(--gr);float:right">9 mi/day</span></div></div></div>
         <div class="card cp"><div class="clabel">Next Milestones</div><div style="font-family:var(--mono);font-size:9px;line-height:2.3;color:var(--tx)"><div><span style="color:var(--gold)">Mar 23</span> · Rep 28 Arabic study</div><div><span style="color:var(--gold)">Apr 2026</span> · Mosque routine</div><div><span style="color:var(--gold)">Dec 2026</span> · Arabic B2 + Russian</div><div><span style="color:var(--gold)">Oct 2027</span> · Russian B1/B2</div><div><span style="color:var(--gold)">Dec 2028</span> · German B1/B2</div></div></div>
       </div>
@@ -627,7 +634,7 @@ nav{flex:1;padding:10px 0;overflow-y:auto}
     <div class="panel" id="panel-sync">
       <div class="ph">SYNC STATUS</div><div class="ps">13" HOME NODE · EXPORT/IMPORT · GITHUB</div>
       <div class="g2 gap">
-        <div class="card cgr"><div class="clabel">13" MacBook (Home)</div><div style="font-family:var(--mono);font-size:11px;color:var(--tb);margin:10px 0 4px">Persistent Intelligence Node</div><div style="font-family:var(--mono);font-size:9px;color:var(--td);line-height:2">Always-on · Server · Home base</div><div style="margin-top:10px"><span class="dot on"></span><span style="font-family:var(--mono);font-size:9px;color:var(--gr)">THIS MACHINE</span></div></div>
+        <div class="card cgr"><div class="clabel">17" MacBook</div><div style="font-family:var(--mono);font-size:11px;color:var(--tb);margin:10px 0 4px">Primary Intelligence Node</div><div style="font-family:var(--mono);font-size:9px;color:var(--td);line-height:2">Daily driver · Library · R&D Base</div><div style="margin-top:10px"><span class="dot on"></span><span style="font-family:var(--mono);font-size:9px;color:var(--gr)">THIS MACHINE</span></div></div>
         <div class="card ca"><div class="clabel">17" MacBook (Library)</div><div style="font-family:var(--mono);font-size:11px;color:var(--tb);margin:10px 0 4px">Primary Execution Node</div><div style="font-family:var(--mono);font-size:9px;color:var(--td);line-height:2">Daily driver · Library · Not yet purchased</div><div style="margin-top:10px"><span class="dot off"></span><span style="font-family:var(--mono);font-size:9px;color:var(--td)">OFFLINE</span></div></div>
       </div>
       <div class="card cg gap"><div class="clabel">Export / Import Data</div><div style="font-family:var(--mono);font-size:9px;color:var(--td);margin:8px 0 14px">All data in localStorage. Export JSON, copy to other machine, import.</div><div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn pri" onclick="exportData()">EXPORT ALL DATA</button><button class="btn" onclick="document.getElementById('importFile').click()">IMPORT DATA</button><button class="btn dan" onclick="clearData()">CLEAR ALL</button><input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)"></div></div>
@@ -757,6 +764,375 @@ nav{flex:1;padding:10px 0;overflow-y:auto}
       </div>
     </div>
 
+
+    <!-- PROJECTS -->
+    <div class="panel" id="panel-projects">
+      <div class="ph">R&amp;D LAB PROJECTS</div>
+      <div class="ps">LAYERED ARCHITECTURE · PHASE TRACKING · EVIL GENIUS LAB</div>
+
+      <div class="gbanner" style="margin-bottom:24px">
+        <div style="font-family:var(--disp);font-size:12px;color:var(--gold);margin-bottom:10px">THE ARCHITECTURE</div>
+        <div class="gline"><span class="gicon">◈</span><span class="gtxt">Layer 0 — Brain/Theory:</span><span class="gdim"> Math, Physics, Chemistry, Neuroscience, Hypothesis generation</span></div>
+        <div class="gline"><span class="gicon">◈</span><span class="gtxt">Layer 1 — Instruments:</span><span class="gdim"> Telescope, SDR, Sensors, Signal processing</span></div>
+        <div class="gline"><span class="gicon">◈</span><span class="gtxt">Layer 2 — Autonomous Systems:</span><span class="gdim"> River ROV, Cave ROV, Space ROV, Mapping</span></div>
+        <div class="gline"><span class="gicon">◈</span><span class="gtxt">Layer 3 — Fabrication:</span><span class="gdim"> CNC, 3D printing, PCB, Optical bench, Cryo</span></div>
+        <div class="gline"><span class="gicon">◈</span><span class="gtxt">Layer 4 — Experimental Science:</span><span class="gdim"> Org chem, Quantum, Plasma, Biomedical</span></div>
+      </div>
+
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px">
+        <button class="btn pri" onclick="filterProjects('all')">ALL</button>
+        <button class="btn" onclick="filterProjects('instruments')">Instruments</button>
+        <button class="btn" onclick="filterProjects('robotics')">Robotics</button>
+        <button class="btn" onclick="filterProjects('science')">Science</button>
+        <button class="btn" onclick="filterProjects('software')">Software</button>
+        <button class="btn" onclick="filterProjects('creative')">Creative</button>
+        <button class="btn" onclick="filterProjects('business')">Business</button>
+      </div>
+
+      <div id="projectGrid"></div>
+
+      <div class="div"></div>
+      <div class="card cp">
+        <div class="clabel">ADD PROJECT</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+          <input class="inp" id="projName" type="text" placeholder="Project name..." style="flex:1;min-width:200px">
+          <select class="inp" id="projCat" style="width:130px">
+            <option>instruments</option><option>robotics</option><option>science</option>
+            <option>software</option><option>creative</option><option>business</option>
+          </select>
+          <select class="inp" id="projPhase" style="width:120px">
+            <option>Phase 0 - Idea</option><option>Phase 1 - Design</option>
+            <option>Phase 2 - Build</option><option>Phase 3 - Test</option>
+            <option>Phase 4 - Deploy</option><option>Complete</option>
+          </select>
+          <input class="inp" id="projDesc" type="text" placeholder="Description..." style="flex:1;min-width:200px">
+          <button class="btn pri" onclick="addProject()">ADD</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- LAB CONSTITUTION -->
+    <div class="panel" id="panel-lab">
+      <div class="ph">LAB CONSTITUTION</div>
+      <div class="ps">WHY THE LAB EXISTS · STANDARDS · OPERATING MANUAL</div>
+
+      <div class="g2 gap">
+        <div class="card cg">
+          <div class="clabel">WHY THE LAB EXISTS</div>
+          <textarea class="narea" id="labWhy" style="min-height:120px" placeholder="Why does this laboratory exist? What problems is it trying to solve?..."></textarea>
+          <button class="btn pri" style="margin-top:8px" onclick="saveLabDoc('labWhy')">SAVE</button>
+        </div>
+        <div class="card ca">
+          <div class="clabel">RESEARCH DECISION STANDARDS</div>
+          <textarea class="narea" id="labStandards" style="min-height:120px" placeholder="How are research decisions made? What standards of evidence are required?..."></textarea>
+          <button class="btn pri" style="margin-top:8px" onclick="saveLabDoc('labStandards')">SAVE</button>
+        </div>
+      </div>
+
+      <div class="g2 gap">
+        <div class="card cp">
+          <div class="clabel">LABORATORY OPERATING MANUAL</div>
+          <div style="font-family:var(--mono);font-size:9px;line-height:2.2;color:var(--tx);margin-bottom:10px">
+            <div><span style="color:var(--gold)">Naming conventions:</span> ProjectName_v[version]_[date]</div>
+            <div><span style="color:var(--gold)">Coding standards:</span> Python PEP8 · Julia style guide · C++ Google style</div>
+            <div><span style="color:var(--gold)">Documentation:</span> Every function documented · Every experiment logged</div>
+            <div><span style="color:var(--gold)">Publication standard:</span> arXiv preprint first · then journal</div>
+            <div><span style="color:var(--gold)">Simulation standard:</span> Parameters logged · Assumptions stated · Validated</div>
+            <div><span style="color:var(--gold)">Review process:</span> Self-review → AI review → Peer review</div>
+            <div><span style="color:var(--gold)">Backup policy:</span> Git push daily · Encrypted local backup weekly</div>
+            <div><span style="color:var(--gold)">Security:</span> Full-disk encryption · Private repos for research · Public for outputs only</div>
+          </div>
+          <textarea class="narea" id="labManual" style="min-height:100px" placeholder="Add custom operating standards..."></textarea>
+          <button class="btn pri" style="margin-top:8px" onclick="saveLabDoc('labManual')">SAVE</button>
+        </div>
+        <div class="card ca">
+          <div class="clabel">ARCHITECTURE — HYBRID SYSTEM</div>
+          <div style="font-family:var(--mono);font-size:9px;line-height:2.4;color:var(--tx)">
+            <div><span style="color:var(--gold)">GitHub Public</span> — public interface + UI + selected outputs</div>
+            <div><span style="color:var(--gold)">Private Repo</span> — real brain · research notes · draft papers</div>
+            <div><span style="color:var(--gold)">Obsidian Vault</span> — local master vault · offline first · encrypted</div>
+            <div><span style="color:var(--gold)">Scholar OS</span> — command center · all systems visible here</div>
+            <div style="margin-top:10px;color:var(--td)">What is considered complete:</div>
+            <div>Research paper: submitted to arXiv</div>
+            <div>Hardware project: calibrated + data collected</div>
+            <div>Software: tested + documented + pushed</div>
+            <div>Experiment: conclusion + next question generated</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card cg">
+        <div class="clabel">FAILURE DOCUMENTATION LOG</div>
+        <div style="font-family:var(--mono);font-size:9px;color:var(--td);margin-bottom:10px">Every failure is data. Document what failed, why, and what it revealed.</div>
+        <div style="display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <input class="inp" id="failureTitle" type="text" placeholder="What failed..." style="flex:1;min-width:200px">
+          <input class="inp" id="failureWhy" type="text" placeholder="Why it failed..." style="flex:1;min-width:200px">
+          <input class="inp" id="failureLearn" type="text" placeholder="What it revealed..." style="flex:1;min-width:200px">
+          <button class="btn pri" onclick="logFailure()">LOG</button>
+        </div>
+        <div id="failureLog"></div>
+      </div>
+    </div>
+
+    <!-- EXPERIMENTS -->
+    <div class="panel" id="panel-experiments">
+      <div class="ph">EXPERIMENT OS</div>
+      <div class="ps">QUESTION → PREDICTION → PROCEDURE → RESULTS → CONCLUSION</div>
+
+      <div class="card ca gap">
+        <div class="clabel">NEW EXPERIMENT</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">
+          <div>
+            <div class="clabel" style="margin-bottom:4px">EXPERIMENT TITLE</div>
+            <input class="inp" id="expTitle" type="text" placeholder="Title..." style="width:100%">
+          </div>
+          <div>
+            <div class="clabel" style="margin-bottom:4px">DOMAIN</div>
+            <select class="inp" id="expDomain" style="width:100%">
+              <option>Physics</option><option>Mathematics</option><option>Organic Chemistry</option>
+              <option>Neuroscience</option><option>Electronics</option><option>Robotics</option>
+              <option>Optics</option><option>Plasma Physics</option><option>Computation</option>
+            </select>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+          <div>
+            <div class="clabel" style="margin-bottom:4px">QUESTION</div>
+            <textarea class="inp" id="expQ" placeholder="What question does this experiment answer?" style="width:100%;min-height:70px;resize:vertical;line-height:1.7"></textarea>
+          </div>
+          <div>
+            <div class="clabel" style="margin-bottom:4px">PREDICTION</div>
+            <textarea class="inp" id="expPred" placeholder="What do you predict will happen and why?" style="width:100%;min-height:70px;resize:vertical;line-height:1.7"></textarea>
+          </div>
+          <div>
+            <div class="clabel" style="margin-bottom:4px">PROCEDURE</div>
+            <textarea class="inp" id="expProc" placeholder="Step by step procedure..." style="width:100%;min-height:70px;resize:vertical;line-height:1.7"></textarea>
+          </div>
+          <div>
+            <div class="clabel" style="margin-bottom:4px">MEASUREMENTS</div>
+            <textarea class="inp" id="expMeas" placeholder="What will you measure and how?" style="width:100%;min-height:70px;resize:vertical;line-height:1.7"></textarea>
+          </div>
+          <div>
+            <div class="clabel" style="margin-bottom:4px">ERROR ANALYSIS</div>
+            <textarea class="inp" id="expErr" placeholder="Sources of error, uncertainty bounds..." style="width:100%;min-height:70px;resize:vertical;line-height:1.7"></textarea>
+          </div>
+          <div>
+            <div class="clabel" style="margin-bottom:4px">CONCLUSION + NEXT QUESTION</div>
+            <textarea class="inp" id="expConc" placeholder="What did it reveal? What is the next experiment?" style="width:100%;min-height:70px;resize:vertical;line-height:1.7"></textarea>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;margin-top:12px">
+          <button class="btn pri" onclick="saveExperiment()">SAVE EXPERIMENT</button>
+          <button class="btn" onclick="exportExperiments()">EXPORT ALL</button>
+        </div>
+      </div>
+
+      <div class="card cp" style="margin-top:0">
+        <div class="clabel">EXPERIMENT ARCHIVE</div>
+        <div id="expArchive" style="margin-top:12px"></div>
+      </div>
+    </div>
+
+    <!-- LITERATURE -->
+    <div class="panel" id="panel-literature">
+      <div class="ph">LITERATURE OBSERVATORY</div>
+      <div class="ps">TRACK PAPERS · MAP GAPS · BUILD KNOWLEDGE GRAPH</div>
+
+      <div class="g4 gap">
+        <div class="card ca"><div class="clabel">Papers Read</div><div class="cval" id="litRead">0</div></div>
+        <div class="card cg"><div class="clabel">To Read</div><div class="cval" id="litToRead">0</div></div>
+        <div class="card cp"><div class="clabel">Authors Tracked</div><div class="cval" id="litAuthors">0</div></div>
+        <div class="card cgr"><div class="clabel">Open Questions</div><div class="cval" id="litGaps">0</div></div>
+      </div>
+
+      <div class="card ca gap">
+        <div class="clabel">ADD PAPER</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
+          <input class="inp" id="litTitle" type="text" placeholder="Paper title..." style="flex:1;min-width:200px">
+          <input class="inp" id="litAuthor" type="text" placeholder="Authors..." style="width:180px">
+          <input class="inp" id="litYear" type="text" placeholder="Year" style="width:80px">
+          <select class="inp" id="litStatus" style="width:120px">
+            <option>To Read</option><option>Reading</option><option>Read</option><option>Key Paper</option>
+          </select>
+          <select class="inp" id="litDomain" style="width:140px">
+            <option>Physics</option><option>Mathematics</option><option>Chemistry</option>
+            <option>Neuroscience</option><option>Engineering</option><option>Computer Science</option>
+          </select>
+          <input class="inp" id="litUrl" type="text" placeholder="URL/DOI..." style="width:180px">
+          <input class="inp" id="litNotes" type="text" placeholder="Key insight..." style="flex:1;min-width:180px">
+          <button class="btn pri" onclick="addPaper()">ADD</button>
+        </div>
+      </div>
+
+      <div class="card cp gap">
+        <div class="clabel">OPEN QUESTIONS + GAPS</div>
+        <div style="display:flex;gap:10px;margin-top:10px">
+          <input class="inp" id="gapText" type="text" placeholder="Unresolved question or gap in literature..." style="flex:1">
+          <select class="inp" id="gapDomain" style="width:140px">
+            <option>Physics</option><option>Mathematics</option><option>Chemistry</option><option>Neuroscience</option>
+          </select>
+          <button class="btn pri" onclick="addGap()">ADD GAP</button>
+        </div>
+        <div id="gapList" style="margin-top:12px"></div>
+      </div>
+
+      <div class="card cg">
+        <div class="clabel">PAPER LIBRARY</div>
+        <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+          <button class="btn" onclick="filterLit('all')">All</button>
+          <button class="btn" onclick="filterLit('To Read')">To Read</button>
+          <button class="btn" onclick="filterLit('Reading')">Reading</button>
+          <button class="btn" onclick="filterLit('Read')">Read</button>
+          <button class="btn" onclick="filterLit('Key Paper')">Key Papers</button>
+        </div>
+        <div id="litLibrary" style="margin-top:8px"></div>
+      </div>
+    </div>
+
+    <!-- MANUFACTURING -->
+    <div class="panel" id="panel-manufacturing">
+      <div class="ph">MANUFACTURING INTELLIGENCE</div>
+      <div class="ps">BOM · PCB · SUPPLIERS · FABRICATION · COST TRACKING</div>
+
+      <div class="card ca gap">
+        <div class="clabel">ADD COMPONENT / PART</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+          <input class="inp" id="mfgName" type="text" placeholder="Part name..." style="flex:1;min-width:180px">
+          <select class="inp" id="mfgProject" style="width:160px" id="mfgProject">
+            <option>Newtonian Telescope</option><option>River ROV</option><option>Cave ROV</option>
+            <option>Space ROV</option><option>SDR Station</option><option>Plasma Reactor</option>
+            <option>Particle Accelerator</option><option>Cryocooler</option><option>Quantum System</option>
+            <option>Optical Table</option><option>Fume Hood</option><option>Blood Device</option>
+            <option>General Lab</option>
+          </select>
+          <select class="inp" id="mfgType" style="width:120px">
+            <option>Electronics</option><option>Mechanical</option><option>Optical</option>
+            <option>Chemical</option><option>3D Printed</option><option>PCB</option><option>Software</option>
+          </select>
+          <input class="inp" id="mfgQty" type="number" placeholder="Qty" style="width:70px">
+          <input class="inp" id="mfgCost" type="number" placeholder="Unit $" step="0.01" style="width:90px">
+          <input class="inp" id="mfgSupplier" type="text" placeholder="Supplier..." style="width:140px">
+          <input class="inp" id="mfgStatus" type="text" placeholder="Status (ordered/received...)" style="width:160px">
+          <button class="btn pri" onclick="addMfgItem()">ADD</button>
+        </div>
+      </div>
+
+      <div class="g2 gap">
+        <div class="card cg">
+          <div class="clabel">COST SUMMARY BY PROJECT</div>
+          <div id="mfgCostSummary" style="margin-top:10px;font-family:var(--mono);font-size:10px"></div>
+        </div>
+        <div class="card cp">
+          <div class="clabel">TOTAL LAB INVESTMENT</div>
+          <div class="cval" id="mfgTotal">$0<span class="cunit"></span></div>
+          <div class="csub" id="mfgCount">0 components tracked</div>
+        </div>
+      </div>
+
+      <div class="card ca">
+        <div class="clabel">BILL OF MATERIALS</div>
+        <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+          <button class="btn" onclick="filterMfg('all')">All</button>
+          <button class="btn" onclick="filterMfg('Newtonian Telescope')">Telescope</button>
+          <button class="btn" onclick="filterMfg('River ROV')">River ROV</button>
+          <button class="btn" onclick="filterMfg('SDR Station')">SDR</button>
+          <button class="btn" onclick="exportBOM()">EXPORT BOM</button>
+        </div>
+        <div id="mfgTable" style="overflow-x:auto"></div>
+      </div>
+    </div>
+
+    <!-- DECISION ENGINE -->
+    <div class="panel" id="panel-decision">
+      <div class="ph">DECISION ENGINE</div>
+      <div class="ps">EVALUATE · SCORE · PRIORITIZE · NEVER STALL AGAIN</div>
+
+      <div class="card ca gap">
+        <div class="clabel">EVALUATE A DECISION</div>
+        <div style="font-family:var(--mono);font-size:9px;color:var(--td);margin-bottom:14px">Score each criterion 1-10. System recommends based on weighted total.</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px">
+          <input class="inp" id="decOption" type="text" placeholder="Option/Project name..." style="flex:1;min-width:200px">
+          <button class="btn pri" onclick="addDecOption()">ADD OPTION</button>
+          <button class="btn" onclick="clearDecisions()">CLEAR ALL</button>
+        </div>
+        <div id="decOptions"></div>
+        <button class="btn pri" style="margin-top:14px" onclick="scoreDecisions()">SCORE AND RANK</button>
+        <div id="decResults" style="margin-top:14px"></div>
+      </div>
+
+      <div class="card cp gap">
+        <div class="clabel">PRIORITY FILTER — WHAT TO WORK ON NOW</div>
+        <div style="font-family:var(--mono);font-size:10px;line-height:2.4;color:var(--tx);margin-top:10px">
+          <div><span style="color:var(--re)">CRITICAL PATH:</span> GED Math → Calculus → Physics → Nuclear Engineering degree</div>
+          <div><span style="color:var(--gold)">HIGH VALUE:</span> Arabic B2 · Mandarin HSK2 · Research papers · SDR station build</div>
+          <div><span style="color:var(--ac)">MEDIUM:</span> Newtonian telescope · River ROV design · Lab setup · Dog walking business</div>
+          <div><span style="color:var(--td)">DEFER:</span> Plasma reactor · Particle accelerator · Space ROV · Cryocooler (need Phase 3+)</div>
+          <div style="margin-top:12px;color:var(--gold)">THE RULE: Build 1 stack that unlocks all 20. Foundation unlocks everything.</div>
+          <div style="color:var(--td)">Phase 1 (now): Functional research base. One working data lab environment.</div>
+          <div>Phase 2 (3-9 mo): First instruments. Real physical data collected daily.</div>
+          <div>Phase 3 (9-18 mo): Mobile robotics. Field platform exists.</div>
+          <div>Phase 4 (18-36 mo): Research expansion. Publishable outputs.</div>
+        </div>
+      </div>
+
+      <div class="card cg">
+        <div class="clabel">DECISION LOG</div>
+        <div id="decLog" style="margin-top:10px;font-family:var(--mono);font-size:9px;color:var(--td)">No decisions logged yet</div>
+      </div>
+    </div>
+
+    <!-- GROWTH MAP -->
+    <div class="panel" id="panel-growth">
+      <div class="ph">PERSONAL GROWTH OBSERVATORY</div>
+      <div class="ps">CAPABILITIES MAP · LONG-TERM EVOLUTION · NOT DAILY STREAKS</div>
+
+      <div class="g3 gap">
+        <div class="card ca">
+          <div class="clabel">SCIENTIFIC CAPABILITIES</div>
+          <div id="growthSci" style="margin-top:10px"></div>
+        </div>
+        <div class="card cg">
+          <div class="clabel">CREATIVE CAPABILITIES</div>
+          <div id="growthCreate" style="margin-top:10px"></div>
+        </div>
+        <div class="card cp">
+          <div class="clabel">PROFESSIONAL OUTPUT</div>
+          <div id="growthPro" style="margin-top:10px"></div>
+        </div>
+      </div>
+
+      <div class="card cg gap">
+        <div class="clabel">UPDATE CAPABILITY LEVEL</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+          <select class="inp" id="capCategory" style="width:140px">
+            <option value="sci">Scientific</option>
+            <option value="create">Creative</option>
+            <option value="pro">Professional</option>
+          </select>
+          <input class="inp" id="capName" type="text" placeholder="Capability name..." style="width:180px">
+          <input class="inp" id="capLevel" type="number" min="0" max="100" placeholder="Level 0-100" style="width:120px">
+          <input class="inp" id="capNote" type="text" placeholder="Evidence/milestone..." style="flex:1;min-width:180px">
+          <button class="btn pri" onclick="updateCapability()">UPDATE</button>
+        </div>
+      </div>
+
+      <div class="card ca">
+        <div class="clabel">GROWTH OVER TIME</div>
+        <div class="chart-wrap" style="height:280px"><canvas id="growthChart"></canvas></div>
+      </div>
+
+      <div class="card cp gap">
+        <div class="clabel">BOOKS IN PROGRESS</div>
+        <div style="font-family:var(--mono);font-size:9px;color:var(--td);margin-bottom:10px">Track your 2 books being written alongside research papers.</div>
+        <div id="booksList" style="margin-bottom:12px"></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <input class="inp" id="bookName" type="text" placeholder="Book title..." style="flex:1;min-width:200px">
+          <input class="inp" id="bookGenre" type="text" placeholder="Genre/Type..." style="width:140px">
+          <input class="inp" id="bookPct" type="number" min="0" max="100" placeholder="% done" style="width:90px">
+          <button class="btn pri" onclick="addBook()">ADD BOOK</button>
+        </div>
+      </div>
+    </div>
   </main>
 </div>
 
@@ -3585,6 +3961,611 @@ function initWeight(){
   buildWeight();
   var goal=Ld('weightGoal',0);
   if(goal)document.getElementById('wt-goal').value=goal;
+}
+
+
+// ══ DEFAULT PROJECTS ══
+var DEFAULT_PROJECTS = [
+  {id:1,name:'Newtonian Telescope',cat:'instruments',phase:'Phase 1 - Design',desc:'Custom optical telescope. Mirror grinding or kit. First light target: Jupiter.',priority:'HIGH',cost:0,notes:''},
+  {id:2,name:'SDR Satellite Station',cat:'instruments',phase:'Phase 1 - Design',desc:'Software defined radio. ISS pass tracking, NOAA weather satellites, radio astronomy.',priority:'HIGH',cost:0,notes:''},
+  {id:3,name:'River ROV',cat:'robotics',phase:'Phase 0 - Idea',desc:'Surface ROV for river cleaning and data collection. Modular, tethered first build.',priority:'MEDIUM',cost:0,notes:''},
+  {id:4,name:'Cave Mapping ROV',cat:'robotics',phase:'Phase 0 - Idea',desc:'Terrain and underground cave mapping. SLAM navigation. Find undiscovered places.',priority:'MEDIUM',cost:0,notes:''},
+  {id:5,name:'Space Data ROV',cat:'robotics',phase:'Phase 0 - Idea',desc:'Outer space ROV for data collection and mining. Long-term vision project.',priority:'DEFER',cost:0,notes:''},
+  {id:6,name:'Plasma Reactor Simulation',cat:'science',phase:'Phase 0 - Idea',desc:'Design and simulate plasma reactor for electricity generation. Python/Julia simulation first.',priority:'DEFER',cost:0,notes:''},
+  {id:7,name:'Desktop Particle Accelerator',cat:'science',phase:'Phase 0 - Idea',desc:'Miniature particle accelerator design. Simulation and modeling first.',priority:'DEFER',cost:0,notes:''},
+  {id:8,name:'DIY Cryocooler',cat:'science',phase:'Phase 0 - Idea',desc:'Custom cryogenic cooling system. Foundation for electron microscope and quantum experiments.',priority:'DEFER',cost:0,notes:''},
+  {id:9,name:'Electron Microscope (DIY)',cat:'instruments',phase:'Phase 0 - Idea',desc:'Custom cryocooler electron microscope. Advance on commercial designs. Potentially sellable.',priority:'DEFER',cost:0,notes:''},
+  {id:10,name:'Blood Testing Device',cat:'science',phase:'Phase 0 - Idea',desc:'Insertable arm device for blood analysis. Biomedical instrumentation.',priority:'DEFER',cost:0,notes:''},
+  {id:11,name:'Quantum Sensor System',cat:'science',phase:'Phase 0 - Idea',desc:'Quantum sensors for all lab projects. Optical table for quantum system assembly.',priority:'DEFER',cost:0,notes:''},
+  {id:12,name:'DIY Fume Hood',cat:'instruments',phase:'Phase 1 - Design',desc:'Custom fume hood for organic chemistry lab. Safety first.',priority:'HIGH',cost:0,notes:''},
+  {id:13,name:'Video Game (Custom)',cat:'software',phase:'Phase 0 - Idea',desc:'Original game with custom artwork. Design and develop solo.',priority:'MEDIUM',cost:0,notes:''},
+  {id:14,name:'Scientific Instrument Company',cat:'business',phase:'Phase 0 - Idea',desc:'Design improvements on existing scientific instruments. Build and sell. Revenue engine for lab.',priority:'MEDIUM',cost:0,notes:''},
+  {id:15,name:'Dog Walking Business',cat:'business',phase:'Phase 1 - Design',desc:'Walk dogs for income. Fund lab equipment. Low overhead, immediate revenue.',priority:'HIGH',cost:0,notes:''},
+  {id:16,name:'Research Papers (10-20)',cat:'science',phase:'Phase 1 - Design',desc:'10-20 original hypotheses in math, physics, and inventions. Write, simulate, submit to arXiv.',priority:'HIGH',cost:0,notes:''},
+  {id:17,name:'2 Books',cat:'creative',phase:'Phase 1 - Design',desc:'Publish 2 books. Topics TBD. Write alongside research papers.',priority:'MEDIUM',cost:0,notes:''},
+  {id:18,name:'Paintings',cat:'creative',phase:'Phase 0 - Idea',desc:'Multiple painting ideas. Execute alongside technical work for cognitive balance.',priority:'LOW',cost:0,notes:''},
+  {id:19,name:'SDR Distributed Radio Telescope',cat:'instruments',phase:'Phase 0 - Idea',desc:'Multiple SDR nodes time-synchronized via GPS. Synthetic aperture radio telescope.',priority:'MEDIUM',cost:0,notes:''},
+  {id:20,name:'Optical Table + Quantum Lab',cat:'instruments',phase:'Phase 0 - Idea',desc:'Optical bench for laser experiments, interferometry, and quantum system assembly.',priority:'DEFER',cost:0,notes:''},
+];
+
+function getProjects(){
+  var saved = Ld('customProjects',[]);
+  return DEFAULT_PROJECTS.concat(saved);
+}
+
+var currentProjectFilter = 'all';
+
+function filterProjects(cat){
+  currentProjectFilter = cat;
+  buildProjectGrid();
+}
+
+function buildProjectGrid(){
+  var projects = getProjects();
+  if(currentProjectFilter !== 'all'){
+    projects = projects.filter(function(p){return p.cat === currentProjectFilter;});
+  }
+  var phaseColors = {
+    'Phase 0 - Idea':'var(--td)',
+    'Phase 1 - Design':'var(--ac)',
+    'Phase 2 - Build':'var(--gold)',
+    'Phase 3 - Test':'var(--or)',
+    'Phase 4 - Deploy':'var(--pu)',
+    'Complete':'var(--gr)'
+  };
+  var priColors = {'HIGH':'var(--re)','MEDIUM':'var(--gold)','LOW':'var(--td)','DEFER':'var(--td)'};
+
+  var html = '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px">';
+  html += projects.map(function(p){
+    var col = phaseColors[p.phase]||'var(--td)';
+    var pri = priColors[p.priority]||'var(--td)';
+    return '<div style="border:1px solid var(--bor);border-radius:4px;padding:14px;background:var(--s2);border-top:2px solid '+col+'">'
+      +'<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">'
+      +'<div style="font-family:var(--disp);font-size:11px;color:var(--tb)">'+p.name+'</div>'
+      +'<span style="font-family:var(--mono);font-size:7px;color:'+pri+';border:1px solid '+pri+';padding:2px 5px;border-radius:2px">'+p.priority+'</span>'
+      +'</div>'
+      +'<div style="font-family:var(--mono);font-size:8px;color:'+col+';margin-bottom:6px">'+p.phase+'</div>'
+      +'<div style="font-family:var(--mono);font-size:9px;color:var(--tx);margin-bottom:8px;line-height:1.6">'+p.desc+'</div>'
+      +'<div style="display:flex;gap:6px;flex-wrap:wrap">'
+      +'<span class="tag" style="color:var(--ac);border-color:rgba(0,212,255,.3)">'+p.cat+'</span>'
+      +(p.cost?'<span class="tag">$'+p.cost+'</span>':'')
+      +'</div>'
+      +(p.id>20?'<button class="btn dan" style="margin-top:8px;padding:3px 8px;font-size:8px" onclick="deleteProject('+p.id+')">DEL</button>':'')
+      +'</div>';
+  }).join('');
+  html += '</div>';
+
+  var el = document.getElementById('projectGrid');
+  if(el) el.innerHTML = html;
+}
+
+function addProject(){
+  var name = document.getElementById('projName').value.trim();
+  if(!name) return;
+  var custom = Ld('customProjects',[]);
+  custom.push({
+    id: Date.now(),
+    name: name,
+    cat: document.getElementById('projCat').value,
+    phase: document.getElementById('projPhase').value,
+    desc: document.getElementById('projDesc').value,
+    priority: 'MEDIUM', cost: 0, notes: ''
+  });
+  Sv('customProjects', custom);
+  document.getElementById('projName').value='';
+  document.getElementById('projDesc').value='';
+  buildProjectGrid();
+  toast('Project added: '+name,'g');
+}
+
+function deleteProject(id){
+  Sv('customProjects', Ld('customProjects',[]).filter(function(p){return p.id!==id;}));
+  buildProjectGrid();
+}
+
+// ══ LAB CONSTITUTION ══
+function saveLabDoc(key){
+  var el = document.getElementById(key);
+  if(el){ Sv(key, el.value); toast('Saved','g'); }
+}
+
+function loadLabDocs(){
+  ['labWhy','labStandards','labManual'].forEach(function(k){
+    var el=document.getElementById(k);
+    var val=Ld(k,'');
+    if(el&&val) el.value=val;
+  });
+}
+
+function logFailure(){
+  var title=document.getElementById('failureTitle').value.trim();
+  var why=document.getElementById('failureWhy').value.trim();
+  var learn=document.getElementById('failureLearn').value.trim();
+  if(!title) return;
+  var logs=Ld('failureLogs',[]);
+  logs.unshift({date:new Date().toISOString().slice(0,10),title:title,why:why,learn:learn});
+  Sv('failureLogs',logs);
+  document.getElementById('failureTitle').value='';
+  document.getElementById('failureWhy').value='';
+  document.getElementById('failureLearn').value='';
+  buildFailureLog();
+  toast('Failure logged — good. Data collected.','g');
+}
+
+function buildFailureLog(){
+  var logs=Ld('failureLogs',[]);
+  var el=document.getElementById('failureLog');
+  if(!el) return;
+  if(!logs.length){el.innerHTML='<div style="font-family:var(--mono);font-size:9px;color:var(--td)">No failures logged yet. First failure incoming.</div>';return;}
+  el.innerHTML=logs.slice(0,10).map(function(l){
+    return '<div style="border:1px solid var(--bor);border-radius:3px;padding:10px;margin-bottom:8px;background:var(--s2)">'
+      +'<div style="font-family:var(--mono);font-size:9px;display:flex;gap:12px;align-items:center;margin-bottom:4px">'
+      +'<span style="color:var(--td)">'+l.date+'</span>'
+      +'<span style="color:var(--re)">'+l.title+'</span></div>'
+      +'<div style="font-family:var(--mono);font-size:9px;color:var(--td)">Why: <span style="color:var(--tx)">'+l.why+'</span></div>'
+      +'<div style="font-family:var(--mono);font-size:9px;color:var(--td)">Revealed: <span style="color:var(--gr)">'+l.learn+'</span></div>'
+      +'</div>';
+  }).join('');
+}
+
+// ══ EXPERIMENTS ══
+function saveExperiment(){
+  var title=document.getElementById('expTitle').value.trim();
+  if(!title){toast('Add a title','r');return;}
+  var exp={
+    id:Date.now(),
+    date:new Date().toISOString().slice(0,10),
+    title:title,
+    domain:document.getElementById('expDomain').value,
+    question:document.getElementById('expQ').value,
+    prediction:document.getElementById('expPred').value,
+    procedure:document.getElementById('expProc').value,
+    measurements:document.getElementById('expMeas').value,
+    error:document.getElementById('expErr').value,
+    conclusion:document.getElementById('expConc').value,
+    status:'Active'
+  };
+  var exps=Ld('experiments',[]);
+  exps.unshift(exp);
+  Sv('experiments',exps);
+  ['expTitle','expQ','expPred','expProc','expMeas','expErr','expConc'].forEach(function(id){
+    var el=document.getElementById(id);
+    if(el)el.value='';
+  });
+  buildExpArchive();
+  toast('Experiment saved: '+title,'g');
+}
+
+function buildExpArchive(){
+  var exps=Ld('experiments',[]);
+  var el=document.getElementById('expArchive');
+  if(!el)return;
+  if(!exps.length){el.innerHTML='<div style="font-family:var(--mono);font-size:9px;color:var(--td)">No experiments yet. Design your first one.</div>';return;}
+  el.innerHTML=exps.map(function(e){
+    return '<div style="border:1px solid var(--bor);border-radius:3px;padding:14px;margin-bottom:10px;background:var(--s2)">'
+      +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">'
+      +'<span style="font-family:var(--disp);font-size:12px;color:var(--tb)">'+e.title+'</span>'
+      +'<div style="display:flex;gap:8px;align-items:center">'
+      +'<span class="tag a">'+e.domain+'</span>'
+      +'<span style="font-family:var(--mono);font-size:8px;color:var(--td)">'+e.date+'</span></div></div>'
+      +(e.question?'<div style="font-family:var(--mono);font-size:9px;color:var(--td)">Q: <span style="color:var(--tx)">'+e.question+'</span></div>':'')
+      +(e.conclusion?'<div style="font-family:var(--mono);font-size:9px;color:var(--td);margin-top:4px">Conclusion: <span style="color:var(--gr)">'+e.conclusion+'</span></div>':'')
+      +'</div>';
+  }).join('');
+}
+
+function exportExperiments(){
+  var exps=Ld('experiments',[]);
+  var text=exps.map(function(e){
+    return e.title+' ['+e.domain+'] '+e.date+'\n'
+      +'Q: '+e.question+'\nPrediction: '+e.prediction+'\nProcedure: '+e.procedure
+      +'\nMeasurements: '+e.measurements+'\nError: '+e.error+'\nConclusion: '+e.conclusion+'\n\n';
+  }).join('');
+  dl('experiments_'+new Date().toISOString().slice(0,10)+'.txt', text);
+}
+
+// ══ LITERATURE ══
+function addPaper(){
+  var title=document.getElementById('litTitle').value.trim();
+  if(!title)return;
+  var papers=Ld('litPapers',[]);
+  papers.unshift({
+    id:Date.now(),
+    date:new Date().toISOString().slice(0,10),
+    title:title,
+    author:document.getElementById('litAuthor').value,
+    year:document.getElementById('litYear').value,
+    status:document.getElementById('litStatus').value,
+    domain:document.getElementById('litDomain').value,
+    url:document.getElementById('litUrl').value,
+    notes:document.getElementById('litNotes').value
+  });
+  Sv('litPapers',papers);
+  document.getElementById('litTitle').value='';
+  document.getElementById('litAuthor').value='';
+  document.getElementById('litNotes').value='';
+  buildLitLibrary();
+  updateLitStats();
+  toast('Paper added','g');
+}
+
+function addGap(){
+  var text=document.getElementById('gapText').value.trim();
+  if(!text)return;
+  var gaps=Ld('litGaps',[]);
+  gaps.unshift({id:Date.now(),text:text,domain:document.getElementById('gapDomain').value,date:new Date().toISOString().slice(0,10)});
+  Sv('litGaps',gaps);
+  document.getElementById('gapText').value='';
+  buildGapList();
+  updateLitStats();
+  toast('Gap added','g');
+}
+
+function buildGapList(){
+  var gaps=Ld('litGaps',[]);
+  var el=document.getElementById('gapList');
+  if(!el)return;
+  el.innerHTML=gaps.map(function(g){
+    return '<div style="display:flex;gap:10px;padding:7px 0;border-bottom:1px solid var(--bor);font-family:var(--mono);font-size:9px;align-items:center">'
+      +'<span class="tag a">'+g.domain+'</span>'
+      +'<span style="color:var(--tx);flex:1">'+g.text+'</span>'
+      +'<span style="color:var(--td)">'+g.date+'</span>'
+      +'<button class="btn dan" style="padding:2px 6px;font-size:8px" onclick="removeGap('+g.id+')">X</button>'
+      +'</div>';
+  }).join('')||'<div style="color:var(--td);font-family:var(--mono);font-size:9px">No gaps logged yet</div>';
+}
+
+function removeGap(id){
+  Sv('litGaps',Ld('litGaps',[]).filter(function(g){return g.id!==id;}));
+  buildGapList();updateLitStats();
+}
+
+var litFilter='all';
+function filterLit(status){litFilter=status;buildLitLibrary();}
+
+function buildLitLibrary(){
+  var papers=Ld('litPapers',[]);
+  if(litFilter!=='all') papers=papers.filter(function(p){return p.status===litFilter;});
+  var el=document.getElementById('litLibrary');
+  if(!el)return;
+  var statusColors={'To Read':'var(--td)','Reading':'var(--gold)','Read':'var(--gr)','Key Paper':'var(--re)'};
+  el.innerHTML=papers.map(function(p){
+    var col=statusColors[p.status]||'var(--td)';
+    return '<div style="border:1px solid var(--bor);border-radius:3px;padding:12px;margin-bottom:8px;background:var(--s2)">'
+      +'<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">'
+      +'<div style="font-family:var(--mono);font-size:10px;color:var(--tb);flex:1">'+p.title+'</div>'
+      +'<span style="font-family:var(--mono);font-size:8px;color:'+col+';border:1px solid '+col+';padding:2px 6px;border-radius:2px;margin-left:8px;white-space:nowrap">'+p.status+'</span>'
+      +'</div>'
+      +'<div style="font-family:var(--mono);font-size:8px;color:var(--td)">'
+      +(p.author?p.author+' · ':'')+p.year+' · '+p.domain
+      +(p.url?'· <a href="'+p.url+'" target="_blank" style="color:var(--ac)">link</a>':'')
+      +'</div>'
+      +(p.notes?'<div style="font-family:var(--mono);font-size:9px;color:var(--ac);margin-top:4px">Key insight: '+p.notes+'</div>':'')
+      +'</div>';
+  }).join('')||'<div style="font-family:var(--mono);font-size:9px;color:var(--td)">No papers yet</div>';
+}
+
+function updateLitStats(){
+  var papers=Ld('litPapers',[]);
+  var gaps=Ld('litGaps',[]);
+  var read=papers.filter(function(p){return p.status==='Read'||p.status==='Key Paper';}).length;
+  var toRead=papers.filter(function(p){return p.status==='To Read';}).length;
+  var authors=[...new Set(papers.map(function(p){return p.author;}).filter(Boolean))].length;
+  var el;
+  el=document.getElementById('litRead');if(el)el.textContent=read;
+  el=document.getElementById('litToRead');if(el)el.textContent=toRead;
+  el=document.getElementById('litAuthors');if(el)el.textContent=authors;
+  el=document.getElementById('litGaps');if(el)el.textContent=gaps.length;
+}
+
+// ══ MANUFACTURING ══
+function addMfgItem(){
+  var name=document.getElementById('mfgName').value.trim();
+  if(!name)return;
+  var items=Ld('mfgItems',[]);
+  var qty=parseInt(document.getElementById('mfgQty').value)||1;
+  var cost=parseFloat(document.getElementById('mfgCost').value)||0;
+  items.push({
+    id:Date.now(),
+    name:name,
+    project:document.getElementById('mfgProject').value,
+    type:document.getElementById('mfgType').value,
+    qty:qty, unitCost:cost, totalCost:qty*cost,
+    supplier:document.getElementById('mfgSupplier').value,
+    status:document.getElementById('mfgStatus').value,
+    date:new Date().toISOString().slice(0,10)
+  });
+  Sv('mfgItems',items);
+  document.getElementById('mfgName').value='';
+  document.getElementById('mfgQty').value='';
+  document.getElementById('mfgCost').value='';
+  document.getElementById('mfgSupplier').value='';
+  document.getElementById('mfgStatus').value='';
+  buildMfgTable('all');
+  buildMfgSummary();
+  toast('Component added: '+name,'g');
+}
+
+var mfgFilter='all';
+function filterMfg(proj){mfgFilter=proj;buildMfgTable(proj);}
+
+function buildMfgTable(proj){
+  var items=Ld('mfgItems',[]);
+  if(proj&&proj!=='all') items=items.filter(function(i){return i.project===proj;});
+  var el=document.getElementById('mfgTable');
+  if(!el)return;
+  if(!items.length){el.innerHTML='<div style="font-family:var(--mono);font-size:9px;color:var(--td)">No components yet</div>';return;}
+  el.innerHTML='<table style="width:100%;border-collapse:collapse;font-family:var(--mono);font-size:9px">'
+    +'<thead><tr>'
+    +'<th style="text-align:left;padding:6px;border-bottom:1px solid var(--bor);color:var(--td)">Component</th>'
+    +'<th style="text-align:left;padding:6px;border-bottom:1px solid var(--bor);color:var(--td)">Project</th>'
+    +'<th style="text-align:left;padding:6px;border-bottom:1px solid var(--bor);color:var(--td)">Type</th>'
+    +'<th style="text-align:right;padding:6px;border-bottom:1px solid var(--bor);color:var(--td)">Qty</th>'
+    +'<th style="text-align:right;padding:6px;border-bottom:1px solid var(--bor);color:var(--td)">Unit $</th>'
+    +'<th style="text-align:right;padding:6px;border-bottom:1px solid var(--bor);color:var(--td)">Total $</th>'
+    +'<th style="text-align:left;padding:6px;border-bottom:1px solid var(--bor);color:var(--td)">Status</th>'
+    +'<th style="text-align:left;padding:6px;border-bottom:1px solid var(--bor);color:var(--td)">Supplier</th>'
+    +'</tr></thead><tbody>'
+    +items.map(function(i){
+      return '<tr style="border-bottom:1px solid rgba(26,26,48,.4)">'
+        +'<td style="padding:6px;color:var(--tb)">'+i.name+'</td>'
+        +'<td style="padding:6px;color:var(--ac)">'+i.project+'</td>'
+        +'<td style="padding:6px;color:var(--td)">'+i.type+'</td>'
+        +'<td style="padding:6px;text-align:right">'+i.qty+'</td>'
+        +'<td style="padding:6px;text-align:right">$'+i.unitCost.toFixed(2)+'</td>'
+        +'<td style="padding:6px;text-align:right;color:var(--gold)">$'+(i.totalCost||0).toFixed(2)+'</td>'
+        +'<td style="padding:6px;color:var(--gr)">'+i.status+'</td>'
+        +'<td style="padding:6px;color:var(--td)">'+i.supplier+'</td>'
+        +'</tr>';
+    }).join('')
+    +'</tbody></table>';
+}
+
+function buildMfgSummary(){
+  var items=Ld('mfgItems',[]);
+  var total=items.reduce(function(a,b){return a+(b.totalCost||0);},0);
+  var el=document.getElementById('mfgTotal');
+  if(el)el.innerHTML='$'+total.toFixed(2)+'<span class="cunit"></span>';
+  var cnt=document.getElementById('mfgCount');
+  if(cnt)cnt.textContent=items.length+' components tracked';
+
+  // By project
+  var byProj={};
+  items.forEach(function(i){
+    if(!byProj[i.project])byProj[i.project]=0;
+    byProj[i.project]+=(i.totalCost||0);
+  });
+  var sumEl=document.getElementById('mfgCostSummary');
+  if(sumEl){
+    sumEl.innerHTML=Object.keys(byProj).map(function(k){
+      return '<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--bor)">'
+        +'<span style="color:var(--tx)">'+k+'</span>'
+        +'<span style="color:var(--gold)">$'+byProj[k].toFixed(2)+'</span></div>';
+    }).join('')||'<div style="color:var(--td)">No data yet</div>';
+  }
+}
+
+function exportBOM(){
+  var items=Ld('mfgItems',[]);
+  var text='BILL OF MATERIALS\n'+'='.repeat(60)+'\n';
+  text+=items.map(function(i){
+    return i.name+' | '+i.project+' | '+i.type+' | Qty:'+i.qty+' | $'+(i.totalCost||0).toFixed(2)+' | '+i.supplier+' | '+i.status;
+  }).join('\n');
+  dl('BOM_'+new Date().toISOString().slice(0,10)+'.txt',text);
+}
+
+// ══ DECISION ENGINE ══
+var decOptions=[];
+
+function addDecOption(){
+  var name=document.getElementById('decOption').value.trim();
+  if(!name)return;
+  decOptions.push({name:name,learning:5,cost:5,time:5,deps:5,risk:5,strategic:5});
+  document.getElementById('decOption').value='';
+  renderDecOptions();
+}
+
+function renderDecOptions(){
+  var el=document.getElementById('decOptions');
+  if(!el)return;
+  var criteria=['learning','cost','time','deps','risk','strategic'];
+  var labels={learning:'Learning',cost:'Cost(inv)',time:'Time',deps:'Dependencies',risk:'Risk',strategic:'Strategic'};
+  el.innerHTML=decOptions.map(function(opt,i){
+    return '<div style="border:1px solid var(--bor);border-radius:3px;padding:14px;margin-bottom:10px;background:var(--s2)">'
+      +'<div style="font-family:var(--disp);font-size:12px;color:var(--tb);margin-bottom:10px">'+opt.name+'</div>'
+      +'<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">'
+      +criteria.map(function(c){
+        return '<div><div style="font-family:var(--mono);font-size:8px;color:var(--td);margin-bottom:4px">'+labels[c]+'</div>'
+          +'<input type="range" min="1" max="10" value="'+opt[c]+'" style="width:100%" '
+          +'oninput="decOptions['+i+'].'+c+'=parseInt(this.value);this.nextElementSibling.textContent=this.value">'
+          +'<span style="font-family:var(--mono);font-size:9px;color:var(--ac)">'+opt[c]+'</span></div>';
+      }).join('')
+      +'</div></div>';
+  }).join('')||'<div style="font-family:var(--mono);font-size:9px;color:var(--td)">Add options above to compare</div>';
+}
+
+function scoreDecisions(){
+  if(!decOptions.length){toast('Add options first','r');return;}
+  // Weights: strategic highest, then learning, then time, cost inverse, risk inverse, deps inverse
+  var scored=decOptions.map(function(opt){
+    var score = opt.strategic*3 + opt.learning*2.5 + (11-opt.cost)*1.5 + (11-opt.time)*1 + (11-opt.risk)*1.5 + (11-opt.deps)*1;
+    return {name:opt.name,score:Math.round(score)};
+  }).sort(function(a,b){return b.score-a.score;});
+
+  var el=document.getElementById('decResults');
+  if(el){
+    el.innerHTML='<div class="card cg"><div class="clabel">RANKING</div>'
+      +scored.map(function(s,i){
+        return '<div style="display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid var(--bor);font-family:var(--mono);font-size:10px">'
+          +'<span style="color:var(--gold);font-size:14px;width:20px">'+(i+1)+'</span>'
+          +'<span style="color:var(--tb);flex:1">'+s.name+'</span>'
+          +'<span style="color:var(--ac)">Score: '+s.score+'</span>'
+          +(i===0?'<span style="color:var(--gr);font-size:8px;border:1px solid var(--gr);padding:2px 6px;border-radius:2px">DO THIS NEXT</span>':'')
+          +'</div>';
+      }).join('')+'</div>';
+
+    // Log the decision
+    var logs=Ld('decisionLog',[]);
+    logs.unshift({date:new Date().toISOString().slice(0,10),winner:scored[0].name,options:scored.map(function(s){return s.name+'('+s.score+')';}).join(', ')});
+    Sv('decisionLog',logs);
+    buildDecLog();
+  }
+  toast('Decision ranked: '+scored[0].name+' wins','g');
+}
+
+function clearDecisions(){decOptions=[];document.getElementById('decOptions').innerHTML='';document.getElementById('decResults').innerHTML='';}
+
+function buildDecLog(){
+  var logs=Ld('decisionLog',[]);
+  var el=document.getElementById('decLog');
+  if(!el)return;
+  if(!logs.length){el.textContent='No decisions logged yet';return;}
+  el.innerHTML=logs.slice(0,10).map(function(l){
+    return '<div style="padding:6px 0;border-bottom:1px solid var(--bor)">'
+      +'<span style="color:var(--td);font-size:8px">'+l.date+'</span> '
+      +'<span style="color:var(--gold)">'+l.winner+'</span> '
+      +'<span style="color:var(--td)">vs: '+l.options+'</span></div>';
+  }).join('');
+}
+
+// ══ GROWTH MAP ══
+var DEFAULT_CAPS = {
+  sci: [
+    {name:'Mathematics',level:15,note:'GED level, building'},
+    {name:'Physics',level:10,note:'Conceptual foundation'},
+    {name:'Organic Chemistry',level:20,note:'Khan Academy in progress'},
+    {name:'Neuroscience',level:25,note:'Self-study ongoing'},
+    {name:'Arabic',level:35,note:'Phase 1.5, B1 approaching'},
+    {name:'Mandarin',level:10,note:'HSK1 starting'},
+    {name:'Programming (Python)',level:30,note:'Scripts and projects'},
+    {name:'Electronics',level:20,note:'Basic circuits'},
+    {name:'Signal Processing',level:15,note:'SDR interest'},
+  ],
+  create: [
+    {name:'Painting',level:30,note:'Multiple ideas planned'},
+    {name:'Game Design',level:15,note:'Concept stage'},
+    {name:'Writing (English)',level:45,note:'Research papers + 2 books'},
+    {name:'CAD/3D Design',level:10,note:'FreeCAD learning'},
+    {name:'Scientific Visualization',level:20,note:'Python matplotlib'},
+  ],
+  pro: [
+    {name:'Research Papers',level:10,note:'10-20 hypotheses forming'},
+    {name:'arXiv Submissions',level:0,note:'First submission target 2027'},
+    {name:'Certifications',level:5,note:'IBM Data Science next'},
+    {name:'GitHub Portfolio',level:20,note:'scholar-os live'},
+    {name:'Dog Walking Business',level:5,note:'Planning phase'},
+  ]
+};
+
+function getCapabilities(){
+  return {
+    sci: Ld('capsSci', DEFAULT_CAPS.sci),
+    create: Ld('capsCreate', DEFAULT_CAPS.create),
+    pro: Ld('capsPro', DEFAULT_CAPS.pro)
+  };
+}
+
+function buildGrowthSections(){
+  var caps=getCapabilities();
+  var sections={sci:'growthSci',create:'growthCreate',pro:'growthPro'};
+  var colors={sci:'var(--ac)',create:'var(--pu)',pro:'var(--gold)'};
+  Object.keys(sections).forEach(function(k){
+    var el=document.getElementById(sections[k]);
+    if(!el)return;
+    var list=caps[k]||[];
+    el.innerHTML=list.map(function(cap){
+      return '<div style="margin-bottom:10px">'
+        +'<div style="display:flex;justify-content:space-between;font-family:var(--mono);font-size:9px;margin-bottom:4px">'
+        +'<span style="color:var(--tx)">'+cap.name+'</span>'
+        +'<span style="color:'+colors[k]+'">'+cap.level+'%</span></div>'
+        +'<div class="pt"><div class="pf" style="width:'+cap.level+'%;background:'+colors[k]+'"></div></div>'
+        +(cap.note?'<div style="font-family:var(--mono);font-size:8px;color:var(--td);margin-top:2px">'+cap.note+'</div>':'')
+        +'</div>';
+    }).join('')||'<div style="font-family:var(--mono);font-size:9px;color:var(--td)">No data yet</div>';
+  });
+
+  // Growth chart
+  if(!CHARTS.growth){
+    var ctx=document.getElementById('growthChart');
+    if(ctx){
+      var allCaps=caps.sci.concat(caps.create).concat(caps.pro);
+      CHARTS.growth=new Chart(ctx,{
+        type:'radar',
+        data:{
+          labels:allCaps.slice(0,8).map(function(c){return c.name;}),
+          datasets:[{
+            label:'Current Level',
+            data:allCaps.slice(0,8).map(function(c){return c.level;}),
+            borderColor:'#00d4ff',backgroundColor:'rgba(0,212,255,.1)',pointRadius:4
+          }]
+        },
+        options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{r:{grid:{color:'#1a1a30'},ticks:{color:'#404468',font:{family:'Share Tech Mono',size:8}},pointLabels:{color:'#b8c4d8',font:{family:'Share Tech Mono',size:9}}}}}
+      });
+    }
+  }
+}
+
+function updateCapability(){
+  var cat=document.getElementById('capCategory').value;
+  var name=document.getElementById('capName').value.trim();
+  var level=parseInt(document.getElementById('capLevel').value)||0;
+  var note=document.getElementById('capNote').value;
+  if(!name)return;
+  var caps=getCapabilities();
+  var list=caps[cat]||[];
+  var existing=list.find(function(c){return c.name.toLowerCase()===name.toLowerCase();});
+  if(existing){existing.level=level;existing.note=note;}
+  else{list.push({name:name,level:level,note:note});}
+  caps[cat]=list;
+  Sv('capsSci',caps.sci);Sv('capsCreate',caps.create);Sv('capsPro',caps.pro);
+  buildGrowthSections();
+  toast(name+' updated to '+level+'%','g');
+}
+
+// ══ BOOKS IN PROGRESS ══
+function addBook(){
+  var name=document.getElementById('bookName').value.trim();
+  if(!name)return;
+  var books=Ld('writingBooks',[]);
+  books.push({id:Date.now(),name:name,genre:document.getElementById('bookGenre').value,pct:parseInt(document.getElementById('bookPct').value)||0});
+  Sv('writingBooks',books);
+  document.getElementById('bookName').value='';
+  document.getElementById('bookGenre').value='';
+  document.getElementById('bookPct').value='';
+  buildBooksList();
+  toast('Book added: '+name,'g');
+}
+
+function buildBooksList(){
+  var books=Ld('writingBooks',[]);
+  var el=document.getElementById('booksList');
+  if(!el)return;
+  if(!books.length){el.innerHTML='<div style="font-family:var(--mono);font-size:9px;color:var(--td)">No books tracked yet. Add your 2 books above.</div>';return;}
+  el.innerHTML=books.map(function(b){
+    return '<div style="border:1px solid var(--bor);border-radius:3px;padding:12px;margin-bottom:8px;background:var(--s2)">'
+      +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">'
+      +'<span style="font-family:var(--disp);font-size:11px;color:var(--tb)">'+b.name+'</span>'
+      +'<span style="font-family:var(--mono);font-size:9px;color:var(--gold)">'+b.pct+'% done</span></div>'
+      +(b.genre?'<span class="tag">'+b.genre+'</span>':'')
+      +'<div class="pt" style="margin-top:8px"><div class="pf" style="width:'+b.pct+'%;background:var(--pu)"></div></div>'
+      +'</div>';
+  }).join('');
+}
+
+// ══ INIT NEW MODULES ══
+function initNewModules(){
+  buildProjectGrid();
+  buildFailureLog();
+  loadLabDocs();
+  buildExpArchive();
+  buildLitLibrary();
+  buildGapList();
+  updateLitStats();
+  buildMfgTable('all');
+  buildMfgSummary();
+  buildDecLog();
+  buildGrowthSections();
+  buildBooksList();
 }
 
 </script>
